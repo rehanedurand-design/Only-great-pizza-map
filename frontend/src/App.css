@@ -1,34 +1,133 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #0f0f10;
+/* Main App Styles */
+.app-container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
 }
 
-.App-link {
-    color: #61dafb;
+/* Navigation */
+.nav-link {
+    @apply flex flex-col items-center gap-1 px-4 py-2 text-stone transition-colors;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
+.nav-link:hover {
+    @apply text-ink;
+}
+
+.nav-link.active {
+    @apply text-tomato;
+}
+
+/* Cards */
+.pizzeria-card {
+    @apply bg-white rounded-xl overflow-hidden shadow-sm border border-stone/10 transition-all duration-300;
+}
+
+.pizzeria-card:hover {
+    @apply shadow-md -translate-y-1;
+}
+
+/* Badges */
+.badge-neapolitan {
+    @apply bg-tomato/10 text-tomato border border-tomato/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider;
+}
+
+.badge-roman {
+    @apply bg-terracotta/10 text-terracotta border border-terracotta/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider;
+}
+
+.badge-verified {
+    @apply bg-olive/10 text-olive border border-olive/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider;
+}
+
+/* Filter Pills */
+.filter-pill {
+    @apply px-4 py-2 rounded-full text-sm font-medium border transition-all cursor-pointer;
+}
+
+.filter-pill.inactive {
+    @apply bg-paper border-stone/20 text-ink/70 hover:border-ink/40;
+}
+
+.filter-pill.active {
+    @apply bg-tomato border-tomato text-white;
+}
+
+/* Buttons */
+.btn-primary {
+    @apply bg-tomato text-white font-sans font-bold py-3 px-6 rounded-full shadow-lg transition-all;
+}
+
+.btn-primary:hover {
+    @apply bg-tomato-hover scale-105;
+}
+
+.btn-secondary {
+    @apply bg-paper text-ink border-2 border-ink/10 font-sans font-semibold py-3 px-6 rounded-full transition-all;
+}
+
+.btn-secondary:hover {
+    @apply border-ink/30;
+}
+
+/* Map container */
+.map-container {
+    height: calc(100vh - 140px);
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        height: calc(100vh - 180px);
     }
-    to {
-        transform: rotate(360deg);
-    }
+}
+
+/* Surprise button animation */
+.surprise-btn {
+    @apply relative overflow-hidden;
+}
+
+.surprise-btn::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-tomato via-terracotta to-tomato;
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Photo gallery */
+.photo-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px;
+    height: 300px;
+}
+
+.photo-grid .main-photo {
+    grid-row: span 2;
+}
+
+/* Rating stars */
+.rating-star {
+    @apply text-gold;
+}
+
+/* Skeleton loading */
+.skeleton {
+    @apply bg-stone/20 animate-pulse rounded;
+}
+
+/* Editorial quote style */
+.editorial-quote {
+    @apply relative pl-4 border-l-4 border-terracotta italic text-ink/80;
+}
+
+/* Recommended badge */
+.recommended-badge {
+    @apply inline-flex items-center gap-1 px-2 py-1 bg-olive/10 text-olive text-xs font-medium rounded-full;
 }
