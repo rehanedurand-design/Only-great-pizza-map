@@ -7,7 +7,7 @@ import { toast } from "sonner";
 const WaitTimeBadge = ({ waitTime }) => {
   if (!waitTime || !waitTime.is_open) {
     return (
-      <div className="flex items-center gap-1 text-xs px-2 py-1 bg-stone/20 text-stone rounded-full">
+      <div className="flex items-center gap-1 text-xs px-2 py-1 bg-stone/10 text-stone font-heading uppercase tracking-wider">
         <Clock size={12} />
         <span>Closed</span>
       </div>
@@ -17,10 +17,10 @@ const WaitTimeBadge = ({ waitTime }) => {
   const { current_wait, crowd_level } = waitTime;
   
   const colors = {
-    low: "bg-olive/20 text-olive",
-    moderate: "bg-gold/30 text-terracotta",
-    busy: "bg-tomato/20 text-tomato",
-    very_busy: "bg-tomato/30 text-tomato"
+    low: "bg-olive/10 text-olive",
+    moderate: "bg-gold/20 text-terracotta",
+    busy: "bg-brick/10 text-brick",
+    very_busy: "bg-brick/20 text-brick"
   };
 
   const labels = {
@@ -31,7 +31,7 @@ const WaitTimeBadge = ({ waitTime }) => {
   };
 
   return (
-    <div className={`flex items-center gap-1 text-xs px-2 py-1 rounded-full font-medium ${colors[crowd_level]}`}>
+    <div className={`flex items-center gap-1 text-xs px-2 py-1 font-heading uppercase tracking-wider ${colors[crowd_level]}`}>
       <Users size={12} />
       <span>{labels[crowd_level]}</span>
     </div>
@@ -81,12 +81,12 @@ const PizzeriaCard = ({ pizzeria, onFavoriteChange }) => {
       onClick={() => navigate(`/pizzeria/${pizzeria.id}`)}
       data-testid={`pizzeria-card-${pizzeria.id}`}
     >
-      {/* Image */}
+      {/* Image with grayscale hover effect */}
       <div className="relative aspect-[4/3] overflow-hidden">
         <img 
           src={pizzeria.photos?.main} 
           alt={pizzeria.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-cover card-image-grayscale group-hover:scale-105 transition-all duration-500"
           loading="lazy"
         />
         
@@ -100,12 +100,12 @@ const PizzeriaCard = ({ pizzeria, onFavoriteChange }) => {
         {/* Favorite Button */}
         <button
           onClick={handleFavoriteClick}
-          className="absolute top-3 right-3 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-md transition-all hover:scale-110"
+          className="absolute top-3 right-3 w-10 h-10 bg-white/95 flex items-center justify-center transition-all hover:bg-brick hover:text-white"
           data-testid={`favorite-btn-${pizzeria.id}`}
         >
           <Heart 
-            size={20} 
-            className={isFavorite ? "fill-tomato text-tomato" : "text-ink/60"}
+            size={18} 
+            className={isFavorite ? "fill-brick text-brick group-hover:fill-white group-hover:text-white" : "text-ink/60"}
           />
         </button>
 
@@ -120,16 +120,16 @@ const PizzeriaCard = ({ pizzeria, onFavoriteChange }) => {
 
       {/* Content */}
       <div className="p-4">
-        <h3 className="font-serif text-lg font-semibold text-ink mb-1 group-hover:text-tomato transition-colors">
+        <h3 className="font-heading text-lg uppercase tracking-wide text-ink mb-1 group-hover:text-brick transition-colors">
           {pizzeria.name}
         </h3>
         
-        <div className="flex items-center gap-2 text-sm text-stone mb-2">
+        <div className="flex items-center gap-2 text-sm text-stone mb-3">
           <MapPin size={14} />
           <span>{pizzeria.neighborhood}</span>
           {pizzeria.distance && (
             <>
-              <span>•</span>
+              <span>·</span>
               <span className="text-olive font-medium">{pizzeria.distance} km</span>
             </>
           )}
@@ -145,17 +145,17 @@ const PizzeriaCard = ({ pizzeria, onFavoriteChange }) => {
         </div>
 
         {/* Mini Badges */}
-        <div className="flex flex-wrap gap-1 mt-3">
+        <div className="flex flex-wrap gap-2 mt-3 pt-3 border-t border-stone/10">
           {pizzeria.badges?.slice(0, 2).map((badge, index) => (
             <span 
               key={index}
-              className="text-xs px-2 py-1 bg-paper text-ink/70 rounded-full"
+              className="text-xs px-2 py-1 bg-cream text-ink/70 font-heading uppercase tracking-wider"
             >
               {badge}
             </span>
           ))}
           {pizzeria.badges?.length > 2 && (
-            <span className="text-xs px-2 py-1 bg-paper text-ink/70 rounded-full">
+            <span className="text-xs px-2 py-1 bg-cream text-ink/70 font-heading uppercase tracking-wider">
               +{pizzeria.badges.length - 2}
             </span>
           )}
