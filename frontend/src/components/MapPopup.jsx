@@ -1,5 +1,25 @@
-import { Star, MapPin } from "lucide-react";
+import { Star, MapPin, Clock, Users } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+
+const WaitTimeMini = ({ waitTime }) => {
+  if (!waitTime || !waitTime.is_open) {
+    return <span className="text-xs text-stone">Closed</span>;
+  }
+
+  const { current_wait, crowd_level } = waitTime;
+  const colors = {
+    low: "text-olive",
+    moderate: "text-terracotta",
+    busy: "text-tomato",
+    very_busy: "text-tomato"
+  };
+
+  return (
+    <span className={`text-xs font-medium ${colors[crowd_level]}`}>
+      {current_wait === 0 ? "No wait" : `~${current_wait} min wait`}
+    </span>
+  );
+};
 
 const MapPopup = ({ pizzeria }) => {
   const navigate = useNavigate();
@@ -44,7 +64,8 @@ const MapPopup = ({ pizzeria }) => {
             <Star size={14} className="fill-gold text-gold" />
             <span className="font-bold text-ink text-sm">{pizzeria.google_rating}</span>
           </div>
-          <span className="text-xs text-stone">({pizzeria.review_count} reviews)</span>
+          <span className="text-stone">•</span>
+          <WaitTimeMini waitTime={pizzeria.wait_time} />
         </div>
 
         <button 
