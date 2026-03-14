@@ -115,16 +115,16 @@ const Explore = () => {
   return (
     <div className="min-h-screen bg-cream pb-24" data-testid="explore-page">
       {/* Header */}
-      <header className="bg-white border-b border-stone/10 sticky top-0 z-50">
-        <div className="px-4 py-4">
+      <header className="bg-white border-b border-stone/20 sticky top-0 z-50">
+        <div className="px-4 py-5">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <h1 className="font-serif text-2xl font-bold text-ink">Explore</h1>
-              <p className="text-sm text-stone">Discover the best pizza in Paris</p>
+              <h1 className="font-heading text-3xl font-bold text-ink uppercase tracking-tight">Explore</h1>
+              <p className="text-sm text-stone uppercase tracking-widest mt-1">Discover the best pizza in Paris</p>
             </div>
             <button
               onClick={handleSurpriseMe}
-              className="flex items-center gap-2 bg-tomato text-white px-4 py-2 rounded-full font-semibold text-sm hover:bg-tomato-hover transition-colors"
+              className="flex items-center gap-2 bg-brick text-white px-5 py-2 font-heading uppercase tracking-wider text-sm hover:bg-brick-hover transition-colors"
               data-testid="explore-surprise-btn"
             >
               <Sparkles size={16} />
@@ -140,15 +140,15 @@ const Explore = () => {
               placeholder="Search pizzerias, neighborhoods..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-10 bg-paper border-stone/20 focus:border-tomato"
+              className="pl-10 bg-cream border-stone/30 focus:border-brick rounded-none"
               data-testid="explore-search-input"
             />
           </div>
 
           {/* Sort and Location */}
-          <div className="flex items-center gap-3 mt-3">
+          <div className="flex items-center gap-3 mt-4">
             <Select value={sortBy} onValueChange={setSortBy}>
-              <SelectTrigger className="w-40" data-testid="sort-select">
+              <SelectTrigger className="w-40 rounded-none border-stone/30" data-testid="sort-select">
                 <SelectValue placeholder="Sort by" />
               </SelectTrigger>
               <SelectContent>
@@ -173,10 +173,10 @@ const Explore = () => {
             <button
               onClick={getUserLocation}
               disabled={gettingLocation}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+              className={`flex items-center gap-2 px-4 py-2 text-sm font-heading uppercase tracking-wider transition-colors ${
                 userLocation 
-                  ? "bg-olive/10 text-olive border border-olive/20" 
-                  : "bg-paper text-ink/70 border border-stone/20 hover:border-ink/40"
+                  ? "bg-olive/10 text-olive border border-olive/30" 
+                  : "bg-cream text-ink/70 border border-stone/30 hover:border-ink"
               }`}
               data-testid="get-location-btn"
             >
@@ -191,9 +191,9 @@ const Explore = () => {
       <FilterBar filters={filters} onFilterChange={setFilters} />
 
       {/* Results count */}
-      <div className="px-4 py-3 flex items-center justify-between">
-        <p className="text-sm text-stone">
-          <span className="font-semibold text-ink">{filteredPizzerias.length}</span> pizzerias found
+      <div className="px-4 py-4 flex items-center justify-between border-b border-stone/10">
+        <p className="text-sm text-stone uppercase tracking-widest">
+          <span className="font-heading text-ink">{filteredPizzerias.length}</span> pizzerias found
         </p>
       </div>
 
@@ -236,15 +236,15 @@ const Explore = () => {
 
       {/* Featured Section */}
       {!loading && filteredPizzerias.length > 0 && (
-        <section className="mt-12 px-4">
-          <h2 className="font-serif text-xl font-bold text-ink mb-4">
+        <section className="mt-16 px-4">
+          <h2 className="font-heading text-2xl font-bold text-ink uppercase tracking-tight mb-4">
             Editor's Picks
           </h2>
-          <div className="bg-paper rounded-2xl p-6">
-            <p className="font-hand text-lg text-terracotta mb-3 -rotate-1">
+          <div className="bg-paper border border-stone/20 p-6">
+            <p className="font-accent text-xl text-terracotta -rotate-1 mb-3">
               "The pizza scene in Paris has never been better"
             </p>
-            <p className="text-ink/80 leading-relaxed">
+            <p className="text-ink/80 leading-relaxed font-body">
               Our curated selection features only pizzerias with exceptional ratings, 
               authentic Italian techniques, and unforgettable flavors. Each spot has 
               been vetted by food critics and passionate locals alike.
