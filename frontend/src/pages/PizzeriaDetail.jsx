@@ -17,10 +17,13 @@ import {
   Leaf,
   Plus,
   Users,
-  RefreshCw
+  RefreshCw,
+  MessageCircle,
+  Send
 } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 import {
   Dialog,
   DialogContent,
@@ -534,6 +537,117 @@ const PizzeriaDetail = () => {
               );
             })}
           </div>
+        </section>
+
+        {/* User Reviews Section */}
+        <section className="mb-6">
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="font-serif text-xl font-semibold text-ink">
+              User Reviews ({reviews.length})
+            </h2>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => {
+                if (!isAuthenticated) {
+                  toast.error("Please login to write a review");
+                  navigate("/auth");
+                } else {
+                  setShowReviewForm(!showReviewForm);
+                }
+              }}
+              data-testid="write-review-btn"
+            >
+              <MessageCircle size={16} className="mr-2" />
+              Write Review
+            </Button>
+          </div>
+
+          {/* Review Form */}
+          {showReviewForm && (
+            <div className="bg-paper rounded-xl p-4 mb-4 animate-in" data-testid="review-form">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-sm font-medium text-ink">Your rating:</span>
+                <div className="flex gap-1">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <button
+                      key={star}
+                      onClick={() => setReviewData({ ...reviewData, rating: star })}
+                      className="p-1"
+                      data-testid={`rating-star-${star}`}
+                    >
+                      <Star
+                        size={24}
+                        className={star <= reviewData.rating ? "fill-gold text-gold" : "text-stone/30"}
+                      />
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <Textarea
+                placeholder="Share your experience at this pizzeria..."
+                value={reviewData.comment}
+                onChange={(e) => setReviewData({ ...reviewData, comment: e.target.value })}
+                className="mb-3"
+                rows={3}
+                data-testid="review-comment-input"
+              />
+              <div className="flex gap-2">
+                <Button
+                  onClick={submitReview}
+                  disabled={submittingReview}
+                  className="bg-tomato hover:bg-tomato-hover text-white"
+                  data-testid="submit-review-btn"
+                >
+                  <Send size={16} className="mr-2" />
+                  {submittingReview ? "Submitting..." : "Submit Review"}
+                </Button>
+                <Button
+                  variant="outline"
+                  onClick={() => setShowReviewForm(false)}
+                >
+                  Cancel
+                </Button>
+              </div>
+            </div>
+          )}
+
+          {/* Reviews List */}
+          {reviews.length > 0 ? (
+            <div className="space-y-3">
+              {reviews.map((review) => (
+                <div 
+                  key={review.id}
+                  className="bg-white rounded-xl p-4 shadow-sm border border-stone/10"
+                  data-testid={`review-${review.id}`}
+                >
+                  <div className="flex items-start justify-between mb-2">
+                    <div>
+                      <p className="font-medium text-ink">{review.user_name}</p>
+                      <div className="flex items-center gap-1 mt-1">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <Star
+                            key={star}
+                            size={14}
+                            className={star <= review.rating ? "fill-gold text-gold" : "text-stone/20"}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                    <span className="text-xs text-stone">
+                      {new Date(review.created_at).toLocaleDateString()}
+                    </span>
+                  </div>
+                  <p className="text-ink/80 text-sm">{review.comment}</p>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-8 bg-paper rounded-xl">
+              <MessageCircle size={32} className="mx-auto text-stone/30 mb-2" />
+              <p className="text-stone">No reviews yet. Be the first to share your experience!</p>
+            </div>
+          )}
         </section>
 
         {/* Get Directions Button */}
