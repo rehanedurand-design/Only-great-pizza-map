@@ -3,10 +3,17 @@ import axios from "axios";
 import { API } from "@/App";
 import PizzeriaCard from "@/components/PizzeriaCard";
 import FilterBar from "@/components/FilterBar";
-import { Sparkles, Search, ChevronLeft } from "lucide-react";
+import { Sparkles, Search, MapPin, Star, Clock, Navigation } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const Explore = () => {
   const navigate = useNavigate();
@@ -15,10 +22,13 @@ const Explore = () => {
   const [loading, setLoading] = useState(true);
   const [filters, setFilters] = useState({});
   const [searchQuery, setSearchQuery] = useState("");
+  const [sortBy, setSortBy] = useState("rating");
+  const [userLocation, setUserLocation] = useState(null);
+  const [gettingLocation, setGettingLocation] = useState(false);
 
   useEffect(() => {
     fetchPizzerias();
-  }, [filters]);
+  }, [filters, sortBy, userLocation]);
 
   useEffect(() => {
     // Client-side search filter
@@ -35,6 +45,30 @@ const Explore = () => {
     }
   }, [searchQuery, pizzerias]);
 
+  const getUserLocation = () => {
+    if (!navigator.geolocation) {
+      toast.error("Geolocation not supported");
+      return;
+    }
+    
+    setGettingLocation(true);
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        setUserLocation({
+          lat: position.coords.latitude,
+          lon: position.coords.longitude
+        });
+        setSortBy("distance");
+        toast.success("Location found! Sorting by distance");
+        setGettingLocation(false);
+      },
+      (error) => {
+        toast.error("Could not get your location");
+        setGettingLocation(false);
+      }
+    );
+  };
+
   const fetchPizzerias = async () => {
     try {
       setLoading(true);
@@ -44,6 +78,15 @@ const Explore = () => {
           params.append(key, value);
         }
       });
+      
+      if (sortBy) {
+        params.append("sort_by", sortBy);
+      }
+      
+      if (userLocation) {
+        params.append("user_lat", userLocation.lat);
+        params.append("user_lon", userLocation.lon);
+      }
       
       const response = await axios.get(`${API}/pizzerias?${params.toString()}`);
       setPizzerias(response.data);
@@ -100,6 +143,46 @@ const Explore = () => {
               className="pl-10 bg-paper border-stone/20 focus:border-tomato"
               data-testid="explore-search-input"
             />
+          </div>
+
+          {/* Sort and Location */}
+          <div className="flex items-center gap-3 mt-3">
+            <Select value={sortBy} onValueChange={setSortBy}>
+              <SelectTrigger className="w-40" data-testid="sort-select">
+                <SelectValue placeholder="Sort by" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="rating">
+                  <span className="flex items-center gap-2">
+                    <Star size={14} /> Rating
+                  </span>
+                </SelectItem>
+                <SelectItem value="distance" disabled={!userLocation}>
+                  <span className="flex items-center gap-2">
+                    <MapPin size={14} /> Distance
+                  </span>
+                </SelectItem>
+                <SelectItem value="wait_time">
+                  <span className="flex items-center gap-2">
+                    <Clock size={14} /> Wait Time
+                  </span>
+                </SelectItem>
+              </SelectContent>
+            </Select>
+
+            <button
+              onClick={getUserLocation}
+              disabled={gettingLocation}
+              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                userLocation 
+                  ? "bg-olive/10 text-olive border border-olive/20" 
+                  : "bg-paper text-ink/70 border border-stone/20 hover:border-ink/40"
+              }`}
+              data-testid="get-location-btn"
+            >
+              <Navigation size={16} className={gettingLocation ? "animate-spin" : ""} />
+              {userLocation ? "Location On" : "Use My Location"}
+            </button>
           </div>
         </div>
       </header>
