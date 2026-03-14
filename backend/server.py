@@ -348,6 +348,79 @@ async def get_pizzeria(pizzeria_id: str):
     
     return pizzeria
 
+# Model for creating new pizzerias
+class PizzeriaCreate(BaseModel):
+    name: str
+    address: str
+    neighborhood: str
+    latitude: float
+    longitude: float
+    google_rating: float = 4.8
+    review_count: int = 200
+    pizza_style: str = "neapolitan"
+    description: str
+    signature_pizza_name: str
+    signature_pizza_description: str
+    signature_pizza_price: int
+    photo_main: str = "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1200"
+    photo_interior: str = "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200"
+    photo_chef: str = "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200"
+    badges: List[str] = []
+    sourdough: bool = False
+    long_fermentation: bool = True
+    gluten_free: bool = False
+    italian_owners: bool = True
+    italian_pizzaiolo: bool = True
+    good_wine: bool = False
+    famous_tiramisu: bool = False
+    recommended_by: List[str] = []
+
+@api_router.post("/pizzerias", response_model=PizzeriaResponse)
+async def create_pizzeria(data: PizzeriaCreate):
+    """Add a new pizzeria to the database"""
+    pizzeria_id = f"pz-{str(uuid.uuid4())[:8]}"
+    
+    pizzeria_doc = {
+        "id": pizzeria_id,
+        "name": data.name,
+        "address": data.address,
+        "neighborhood": data.neighborhood,
+        "latitude": data.latitude,
+        "longitude": data.longitude,
+        "google_rating": data.google_rating,
+        "review_count": data.review_count,
+        "pizza_style": data.pizza_style,
+        "description": data.description,
+        "signature_pizzas": [
+            {
+                "name": data.signature_pizza_name,
+                "description": data.signature_pizza_description,
+                "price": data.signature_pizza_price
+            }
+        ],
+        "photos": {
+            "main": data.photo_main,
+            "interior": data.photo_interior,
+            "chef": data.photo_chef
+        },
+        "badges": data.badges,
+        "filters": {
+            "sourdough": data.sourdough,
+            "long_fermentation": data.long_fermentation,
+            "gluten_free": data.gluten_free,
+            "italian_owners": data.italian_owners,
+            "italian_pizzaiolo": data.italian_pizzaiolo,
+            "good_wine": data.good_wine,
+            "famous_tiramisu": data.famous_tiramisu
+        },
+        "recommended_by": data.recommended_by,
+        "created_at": datetime.now(timezone.utc).isoformat()
+    }
+    
+    await db.pizzerias.insert_one(pizzeria_doc)
+    pizzeria_doc["wait_time"] = generate_wait_time(pizzeria_id, data.review_count)
+    return pizzeria_doc
+
 @api_router.get("/pizzerias/random/surprise")
 async def surprise_me():
     pizzerias = await db.pizzerias.find({}, {"_id": 0}).to_list(100)
