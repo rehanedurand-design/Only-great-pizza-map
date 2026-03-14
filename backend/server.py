@@ -421,6 +421,62 @@ async def create_pizzeria(data: PizzeriaCreate):
     pizzeria_doc["wait_time"] = generate_wait_time(pizzeria_id, data.review_count)
     return pizzeria_doc
 
+@api_router.delete("/pizzerias/{pizzeria_id}")
+async def delete_pizzeria(pizzeria_id: str):
+    """Delete a pizzeria from the database"""
+    result = await db.pizzerias.delete_one({"id": pizzeria_id})
+    if result.deleted_count == 0:
+        raise HTTPException(status_code=404, detail="Pizzeria not found")
+    return {"message": "Pizzeria deleted", "id": pizzeria_id}
+
+@api_router.put("/pizzerias/{pizzeria_id}")
+async def update_pizzeria(pizzeria_id: str, data: PizzeriaCreate):
+    """Update an existing pizzeria"""
+    existing = await db.pizzerias.find_one({"id": pizzeria_id})
+    if not existing:
+        raise HTTPException(status_code=404, detail="Pizzeria not found")
+    
+    update_doc = {
+        "name": data.name,
+        "address": data.address,
+        "neighborhood": data.neighborhood,
+        "latitude": data.latitude,
+        "longitude": data.longitude,
+        "google_rating": data.google_rating,
+        "review_count": data.review_count,
+        "pizza_style": data.pizza_style,
+        "description": data.description,
+        "signature_pizzas": [
+            {
+                "name": data.signature_pizza_name,
+                "description": data.signature_pizza_description,
+                "price": data.signature_pizza_price
+            }
+        ],
+        "photos": {
+            "main": data.photo_main,
+            "interior": data.photo_interior,
+            "chef": data.photo_chef
+        },
+        "badges": data.badges,
+        "filters": {
+            "sourdough": data.sourdough,
+            "long_fermentation": data.long_fermentation,
+            "gluten_free": data.gluten_free,
+            "italian_owners": data.italian_owners,
+            "italian_pizzaiolo": data.italian_pizzaiolo,
+            "good_wine": data.good_wine,
+            "famous_tiramisu": data.famous_tiramisu
+        },
+        "recommended_by": data.recommended_by
+    }
+    
+    await db.pizzerias.update_one({"id": pizzeria_id}, {"$set": update_doc})
+    
+    updated = await db.pizzerias.find_one({"id": pizzeria_id}, {"_id": 0})
+    updated["wait_time"] = generate_wait_time(pizzeria_id, data.review_count)
+    return updated
+
 @api_router.get("/pizzerias/random/surprise")
 async def surprise_me():
     pizzerias = await db.pizzerias.find({}, {"_id": 0}).to_list(100)
