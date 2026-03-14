@@ -11,6 +11,7 @@ import Favorites from "@/pages/Favorites";
 import PizzaLists from "@/pages/PizzaLists";
 import PizzeriaDetail from "@/pages/PizzeriaDetail";
 import Auth from "@/pages/Auth";
+import Admin from "@/pages/Admin";
 import Navigation from "@/components/Navigation";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
