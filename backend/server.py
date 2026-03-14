@@ -280,7 +280,10 @@ async def get_pizzerias(
     italian_pizzaiolo: Optional[bool] = None,
     good_wine: Optional[bool] = None,
     famous_tiramisu: Optional[bool] = None,
-    include_wait_time: Optional[bool] = True
+    include_wait_time: Optional[bool] = True,
+    user_lat: Optional[float] = None,
+    user_lon: Optional[float] = None,
+    sort_by: Optional[str] = None  # distance, rating, wait_time
 ):
     query = {}
     if style:
@@ -302,10 +305,35 @@ async def get_pizzerias(
     
     pizzerias = await db.pizzerias.find(query, {"_id": 0}).to_list(100)
     
-    # Add real-time wait times
-    if include_wait_time:
-        for p in pizzerias:
+    # Add real-time wait times and distance
+    for p in pizzerias:
+        if include_wait_time:
             p["wait_time"] = generate_wait_time(p["id"], p["review_count"])
+        
+        # Calculate distance if user location provided
+        if user_lat is not None and user_lon is not None:
+            p["distance"] = calculate_distance(user_lat, user_lon, p["latitude"], p["longitude"])
+        
+        # Get user reviews stats
+        review_stats = await db.reviews.aggregate([
+            {"$match": {"pizzeria_id": p["id"]}},
+            {"$group": {"_id": None, "avg_rating": {"$avg": "$rating"}, "count": {"$sum": 1}}}
+        ]).to_list(1)
+        
+        if review_stats:
+            p["user_rating_avg"] = round(review_stats[0]["avg_rating"], 1)
+            p["user_review_count"] = review_stats[0]["count"]
+        else:
+            p["user_rating_avg"] = None
+            p["user_review_count"] = 0
+    
+    # Sort results
+    if sort_by == "distance" and user_lat is not None:
+        pizzerias.sort(key=lambda x: x.get("distance", float("inf")))
+    elif sort_by == "rating":
+        pizzerias.sort(key=lambda x: x.get("google_rating", 0), reverse=True)
+    elif sort_by == "wait_time" and include_wait_time:
+        pizzerias.sort(key=lambda x: x.get("wait_time", {}).get("current_wait", 999))
     
     return pizzerias
 
