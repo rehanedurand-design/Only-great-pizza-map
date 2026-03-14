@@ -16,6 +16,7 @@ Create a mobile and web application called "Only Great Pizza Map Paris" - a cura
 - User accounts with favorites and custom lists
 - "Surprise me" random discovery feature
 - Editorial recommendations from food guides
+- Real-time wait time information
 
 ## Tech Stack
 - **Frontend**: React with Tailwind CSS, Leaflet/OpenStreetMap
@@ -30,15 +31,17 @@ Create a mobile and web application called "Only Great Pizza Map Paris" - a cura
 - [x] Pizzeria endpoints (list, detail, filter, random/surprise)
 - [x] Favorites system (add, remove, list)
 - [x] Pizza lists (CRUD, add/remove pizzerias)
-- [x] 12 curated mock pizzerias seeded
+- [x] **40 curated pizzerias** (28 Neapolitan, 12 Roman) with editorial descriptions
+- [x] **Real-time wait time simulation** based on time of day & popularity
 
 ### Frontend
 - [x] Map View with OpenStreetMap + Leaflet
 - [x] Custom pizza markers (red=Neapolitan, yellow=Roman)
-- [x] Explore page with grid layout
+- [x] Explore page with grid layout (40 pizzerias)
 - [x] Filter system (style, dough, authenticity)
 - [x] Search functionality
 - [x] Pizzeria detail page with photos gallery
+- [x] **Wait time display** with crowd level and refresh button
 - [x] Auth pages (login/register)
 - [x] Favorites page
 - [x] Pizza Lists page with create/delete
@@ -50,26 +53,27 @@ Create a mobile and web application called "Only Great Pizza Map Paris" - a cura
 
 ### P0 - Critical (Shipped)
 - [x] Core map functionality
-- [x] Pizzeria browsing
+- [x] 40 curated pizzerias with descriptions
+- [x] Real-time wait times
 - [x] User authentication
-- [x] Favorites system
+- [x] Favorites & Lists system
 
-### P1 - Important
+### P1 - Important (Next Phase)
 - [ ] User profile page with settings
-- [ ] Share pizzeria to social media
 - [ ] Distance calculation from user location
-- [ ] Review/rating submission by users
+- [ ] Push notifications for wait time drops
+- [ ] User reviews and ratings
 
 ### P2 - Nice to Have
 - [ ] Offline mode / PWA
-- [ ] Push notifications for new pizzerias
 - [ ] Admin panel for managing pizzerias
 - [ ] Integration with real Google Places API
 - [ ] Reservation system integration
+- [ ] Social sharing features
 
 ## Next Action Items
 1. Add user profile page
-2. Implement distance calculation
-3. Add more pizzerias to the database
-4. Consider Google Places API integration for real-time data
-5. Add social sharing functionality
+2. Implement GPS distance calculation
+3. Connect to real wait-time data source (if available)
+4. Add user review submission
+5. Consider PWA for offline access
