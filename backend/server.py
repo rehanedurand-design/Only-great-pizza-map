@@ -556,9 +556,9 @@ async def seed_data():
                 {"name": "Burrata", "description": "Creamy burrata, cherry tomatoes, fresh pesto, rocket", "price": 14}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800",
-                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
-                "chef": "https://images.unsplash.com/photo-1592498546551-222538011a27?w=800"
+                "main": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+                "chef": "https://images.unsplash.com/photo-1592498546551-222538011a27?w=1200"
             },
             "badges": ["Best Margherita", "Italian Pizzaiolo", "Sourdough Dough"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
@@ -580,9 +580,9 @@ async def seed_data():
                 {"name": "Truffle Cream", "description": "Black truffle cream, wild mushrooms, burrata, truffle oil", "price": 19}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800",
-                "interior": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800",
-                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800"
+                "main": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200",
+                "interior": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200",
+                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200"
             },
             "badges": ["Great Wine List", "Italian Owners", "Famous Tiramisu"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
@@ -604,9 +604,9 @@ async def seed_data():
                 {"name": "Cacio e Pepe", "description": "Pecorino cream, crispy guanciale, cracked black pepper", "price": 15}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=800",
-                "interior": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800",
-                "chef": "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=800"
+                "main": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=1200",
+                "interior": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200",
+                "chef": "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=1200"
             },
             "badges": ["Best Margherita", "Sourdough Dough", "Italian Pizzaiolo"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
@@ -628,9 +628,9 @@ async def seed_data():
                 {"name": "Calabrese", "description": "Spicy 'nduja, roasted peppers, stracciatella, Calabrian chili", "price": 16}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=800",
-                "interior": "https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?w=800",
-                "chef": "https://images.unsplash.com/photo-1595475207225-428b62bda831?w=800"
+                "main": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=1200",
+                "interior": "https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?w=1200",
+                "chef": "https://images.unsplash.com/photo-1595475207225-428b62bda831?w=1200"
             },
             "badges": ["Italian Pizzaiolo", "Great Wine List", "Sourdough Dough"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
@@ -652,9 +652,9 @@ async def seed_data():
                 {"name": "Tartufo Nero", "description": "Black truffle shavings, fontina, wild mushrooms, truffle oil", "price": 28}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=800",
-                "interior": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=800",
-                "chef": "https://images.unsplash.com/photo-1583394293214-28ece48c72c4?w=800"
+                "main": "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=1200",
+                "interior": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1200",
+                "chef": "https://images.unsplash.com/photo-1583394293214-28ece48c72c4?w=1200"
             },
             "badges": ["Best Margherita", "Great Wine List", "Famous Tiramisu"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
@@ -676,9 +676,9 @@ async def seed_data():
                 {"name": "Parma", "description": "24-month Parma ham, wild rocket, shaved Parmigiano, olive oil", "price": 18}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=800",
-                "interior": "https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=800",
-                "chef": "https://images.unsplash.com/photo-1542834369-f10ebf06d3e0?w=800"
+                "main": "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=1200",
+                "chef": "https://images.unsplash.com/photo-1542834369-f10ebf06d3e0?w=1200"
             },
             "badges": ["Italian Owners", "Italian Pizzaiolo", "Family Recipe"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
@@ -700,9 +700,9 @@ async def seed_data():
                 {"name": "Bufala DOP", "description": "Premium buffalo mozzarella DOP, San Marzano, fresh basil", "price": 19}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1617343267017-e344bdc7ec94?w=800",
-                "interior": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800",
-                "chef": "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=800"
+                "main": "https://images.unsplash.com/photo-1617343267017-e344bdc7ec94?w=1200",
+                "interior": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=1200",
+                "chef": "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=1200"
             },
             "badges": ["Best Margherita", "Great Wine List", "Italian Pizzaiolo"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
@@ -724,9 +724,9 @@ async def seed_data():
                 {"name": "Diavola Speciale", "description": "Double spicy salami, fresh chili, honey drizzle, mozzarella", "price": 15}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1573821663912-569905455b1c?w=800",
-                "interior": "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=800",
-                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800"
+                "main": "https://images.unsplash.com/photo-1573821663912-569905455b1c?w=1200",
+                "interior": "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=1200",
+                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1200"
             },
             "badges": ["Italian Owners", "Italian Pizzaiolo", "Family Recipe", "Sourdough Dough"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
@@ -748,9 +748,9 @@ async def seed_data():
                 {"name": "Funghi Selvaggi", "description": "Wild forest mushrooms, truffle cream, crispy sage, fontina", "price": 17}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=800",
-                "interior": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800",
-                "chef": "https://images.unsplash.com/photo-1585238341710-4d3ff484184d?w=800"
+                "main": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=1200",
+                "interior": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200",
+                "chef": "https://images.unsplash.com/photo-1585238341710-4d3ff484184d?w=1200"
             },
             "badges": ["Italian Pizzaiolo", "Sourdough Dough", "Great Wine List"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
@@ -772,9 +772,9 @@ async def seed_data():
                 {"name": "Pistacchio e Mortadella", "description": "Pistachio cream, silky mortadella, stracciatella, crushed pistachios", "price": 16}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=800",
-                "interior": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800",
-                "chef": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800"
+                "main": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=1200",
+                "interior": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200",
+                "chef": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1200"
             },
             "badges": ["Italian Pizzaiolo", "Sourdough Dough", "Great Wine List"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
@@ -796,9 +796,9 @@ async def seed_data():
                 {"name": "Margherita STGP", "description": "San Marzano DOP, fior di latte, fresh basil, Vesuvio olive oil", "price": 14}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800",
-                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
-                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800"
+                "main": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200"
             },
             "badges": ["World Champion", "Best Margherita", "Italian Pizzaiolo"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
@@ -820,9 +820,9 @@ async def seed_data():
                 {"name": "Speck Alto Adige", "description": "Alto Adige speck, burrata, rocket, aged balsamic", "price": 18}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=800",
-                "interior": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800",
-                "chef": "https://images.unsplash.com/photo-1592498546551-222538011a27?w=800"
+                "main": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=1200",
+                "interior": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200",
+                "chef": "https://images.unsplash.com/photo-1592498546551-222538011a27?w=1200"
             },
             "badges": ["Great Wine List", "Italian Pizzaiolo", "Late Night"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
@@ -844,9 +844,9 @@ async def seed_data():
                 {"name": "Libertino", "description": "Nduja, ventricina, fresh chili, stracciatella, honey", "price": 19}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800",
-                "interior": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=800",
-                "chef": "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=800"
+                "main": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200",
+                "interior": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1200",
+                "chef": "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=1200"
             },
             "badges": ["Italian Pizzaiolo", "Great Wine List", "Sourdough Dough"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
@@ -868,9 +868,9 @@ async def seed_data():
                 {"name": "Stagionale", "description": "Seasonal vegetables, ricotta di bufala, herbs from the garden", "price": 16}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=800",
-                "interior": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800",
-                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800"
+                "main": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=1200",
+                "interior": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200",
+                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1200"
             },
             "badges": ["Chef's Table", "Seasonal Menu", "Italian Pizzaiolo"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
@@ -892,9 +892,9 @@ async def seed_data():
                 {"name": "Regina", "description": "Cooked ham, button mushrooms, mozzarella, olives", "price": 13}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=800",
-                "interior": "https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?w=800",
-                "chef": "https://images.unsplash.com/photo-1595475207225-428b62bda831?w=800"
+                "main": "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=1200",
+                "interior": "https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?w=1200",
+                "chef": "https://images.unsplash.com/photo-1595475207225-428b62bda831?w=1200"
             },
             "badges": ["Local Favorite", "Italian Owners", "Family Recipe"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
@@ -916,9 +916,9 @@ async def seed_data():
                 {"name": "Verace", "description": "Double mozzarella, San Marzano DOP, fresh basil, EVOO", "price": 15}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=800",
-                "interior": "https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=800",
-                "chef": "https://images.unsplash.com/photo-1542834369-f10ebf06d3e0?w=800"
+                "main": "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=1200",
+                "chef": "https://images.unsplash.com/photo-1542834369-f10ebf06d3e0?w=1200"
             },
             "badges": ["AVPN Certified", "Italian Owners", "Best Margherita"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
@@ -940,9 +940,9 @@ async def seed_data():
                 {"name": "Carminuccio", "description": "Ventricina piccante, friarielli, smoked provola", "price": 14}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1573821663912-569905455b1c?w=800",
-                "interior": "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=800",
-                "chef": "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=800"
+                "main": "https://images.unsplash.com/photo-1573821663912-569905455b1c?w=1200",
+                "interior": "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=1200",
+                "chef": "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=1200"
             },
             "badges": ["Local Secret", "Italian Owners", "Italian Pizzaiolo"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
@@ -964,9 +964,9 @@ async def seed_data():
                 {"name": "Quattro Stagioni", "description": "Four sections: artichokes, mushrooms, ham, olives", "price": 16}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=800",
-                "interior": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800",
-                "chef": "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=800"
+                "main": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=1200",
+                "interior": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200",
+                "chef": "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=1200"
             },
             "badges": ["Italian Owners", "Terrace", "Family Recipe"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
@@ -988,9 +988,9 @@ async def seed_data():
                 {"name": "Marinara Perfetta", "description": "San Marzano, garlic, oregano, EVOO (no cheese)", "price": 10}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=800",
-                "interior": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800",
-                "chef": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800"
+                "main": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?w=1200",
+                "interior": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200",
+                "chef": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1200"
             },
             "badges": ["Italian Owners", "Best Marinara", "Sourdough Dough"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
@@ -1012,9 +1012,9 @@ async def seed_data():
                 {"name": "Del Mugnaio", "description": "Four cheeses, walnuts, honey, fresh thyme", "price": 17}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1617343267017-e344bdc7ec94?w=800",
-                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
-                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800"
+                "main": "https://images.unsplash.com/photo-1617343267017-e344bdc7ec94?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200"
             },
             "badges": ["House-Milled Flour", "Italian Owners", "Sourdough Dough"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
@@ -1036,9 +1036,9 @@ async def seed_data():
                 {"name": "Express Diavola", "description": "Spicy salami, jalapeños, hot honey, mozzarella", "price": 14}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=800",
-                "interior": "https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?w=800",
-                "chef": "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=800"
+                "main": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=1200",
+                "interior": "https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?w=1200",
+                "chef": "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=1200"
             },
             "badges": ["Quick Service", "Italian Pizzaiolo", "Lunch Special"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": True, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
@@ -1060,9 +1060,9 @@ async def seed_data():
                 {"name": "Capricciosa", "description": "Artichokes, ham, mushrooms, olives, mozzarella", "price": 13}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800",
-                "interior": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800",
-                "chef": "https://images.unsplash.com/photo-1595475207225-428b62bda831?w=800"
+                "main": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200",
+                "interior": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=1200",
+                "chef": "https://images.unsplash.com/photo-1595475207225-428b62bda831?w=1200"
             },
             "badges": ["Student Favorite", "Italian Owners", "Budget Friendly"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
@@ -1084,9 +1084,9 @@ async def seed_data():
                 {"name": "Canal", "description": "Gorgonzola dolce, pear, walnuts, honey, rocket", "price": 16}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=800",
-                "interior": "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?w=800",
-                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800"
+                "main": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=1200",
+                "interior": "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?w=1200",
+                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1200"
             },
             "badges": ["Local Secret", "Italian Grocery", "Italian Owners"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
@@ -1108,9 +1108,9 @@ async def seed_data():
                 {"name": "Antica", "description": "Truffle paste, porcini, taleggio, fresh thyme", "price": 20}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=800",
-                "interior": "https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=800",
-                "chef": "https://images.unsplash.com/photo-1542834369-f10ebf06d3e0?w=800"
+                "main": "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=1200",
+                "chef": "https://images.unsplash.com/photo-1542834369-f10ebf06d3e0?w=1200"
             },
             "badges": ["Historic", "Italian Owners", "Great Wine List"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
@@ -1132,9 +1132,9 @@ async def seed_data():
                 {"name": "Roquette", "description": "Bresaola, rocket, parmesan shavings, lemon oil", "price": 17}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=800",
-                "interior": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800",
-                "chef": "https://images.unsplash.com/photo-1585238341710-4d3ff484184d?w=800"
+                "main": "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=1200",
+                "interior": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200",
+                "chef": "https://images.unsplash.com/photo-1585238341710-4d3ff484184d?w=1200"
             },
             "badges": ["Late Night", "Italian Pizzaiolo", "Terrace"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
@@ -1158,9 +1158,9 @@ async def seed_data():
                 {"name": "Patate e Rosmarino", "description": "Paper-thin potatoes, fresh rosemary, sea salt, olive oil", "price": 5}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800",
-                "interior": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800",
-                "chef": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800"
+                "main": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200",
+                "interior": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200",
+                "chef": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1200"
             },
             "badges": ["Italian Owners", "Gluten-Free Option", "Roman Style"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
@@ -1182,9 +1182,9 @@ async def seed_data():
                 {"name": "Zucchine e Fiori", "description": "Zucchini ribbons, zucchini flowers, fresh ricotta, mint", "price": 15}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?w=800",
-                "interior": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800",
-                "chef": "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=800"
+                "main": "https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?w=1200",
+                "interior": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200",
+                "chef": "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=1200"
             },
             "badges": ["Roman Style", "Sourdough Dough", "Seasonal Menu"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
@@ -1206,9 +1206,9 @@ async def seed_data():
                 {"name": "Carciofi alla Romana", "description": "Roman-style artichokes, pecorino, mint, garlic", "price": 6}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=800",
-                "interior": "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?w=800",
-                "chef": "https://images.unsplash.com/photo-1544148103-0773bf10d330?w=800"
+                "main": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=1200",
+                "interior": "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?w=1200",
+                "chef": "https://images.unsplash.com/photo-1544148103-0773bf10d330?w=1200"
             },
             "badges": ["Roman Style", "Italian Owners", "Gluten-Free Option"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
@@ -1230,9 +1230,9 @@ async def seed_data():
                 {"name": "Porchetta", "description": "Slow-roasted porchetta, crackling, fennel pollen, salsa verde", "price": 7}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800",
-                "interior": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800",
-                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800"
+                "main": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200",
+                "interior": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200",
+                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200"
             },
             "badges": ["Roman Style", "Creative Toppings", "Italian Pizzaiolo"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
@@ -1254,9 +1254,9 @@ async def seed_data():
                 {"name": "Mortadella Bologna", "description": "Silky mortadella, pistachio cream, stracciatella", "price": 6}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?w=800",
-                "interior": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800",
-                "chef": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800"
+                "main": "https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?w=1200",
+                "interior": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200",
+                "chef": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1200"
             },
             "badges": ["Roman Style", "Late Night", "Quick Service"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
@@ -1278,9 +1278,9 @@ async def seed_data():
                 {"name": "Supplì al Telefono", "description": "Crispy rice ball with stretchy mozzarella center, served atop pizza", "price": 8}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=800",
-                "interior": "https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?w=800",
-                "chef": "https://images.unsplash.com/photo-1592498546551-222538011a27?w=800"
+                "main": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=1200",
+                "interior": "https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?w=1200",
+                "chef": "https://images.unsplash.com/photo-1592498546551-222538011a27?w=1200"
             },
             "badges": ["Roman Style", "Bonci Method", "Sourdough Dough"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
@@ -1302,9 +1302,9 @@ async def seed_data():
                 {"name": "Fiori di Zucca", "description": "Stuffed zucchini flowers, anchovy, mozzarella", "price": 16}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800",
-                "interior": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800",
-                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800"
+                "main": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200",
+                "interior": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200",
+                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1200"
             },
             "badges": ["Roman Style", "Elegant", "Italian Owners"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
@@ -1326,9 +1326,9 @@ async def seed_data():
                 {"name": "Amatriciana", "description": "Guanciale, pecorino, tomato, black pepper", "price": 17}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?w=800",
-                "interior": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=800",
-                "chef": "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=800"
+                "main": "https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?w=1200",
+                "interior": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1200",
+                "chef": "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=1200"
             },
             "badges": ["Roman Style", "Dual Ovens", "Great Wine List"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
@@ -1350,9 +1350,9 @@ async def seed_data():
                 {"name": "Tonno e Cipolla", "description": "Premium tuna, sweet red onion, capers, oregano", "price": 14}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=800",
-                "interior": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800",
-                "chef": "https://images.unsplash.com/photo-1595475207225-428b62bda831?w=800"
+                "main": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=1200",
+                "interior": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200",
+                "chef": "https://images.unsplash.com/photo-1595475207225-428b62bda831?w=1200"
             },
             "badges": ["Roman Style", "Italian Owners", "Cozy Atmosphere"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
@@ -1374,9 +1374,9 @@ async def seed_data():
                 {"name": "Prosciutto Crudo", "description": "Aged prosciutto di Parma (added after baking), rocket, parmesan", "price": 6}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800",
-                "interior": "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?w=800",
-                "chef": "https://images.unsplash.com/photo-1544148103-0773bf10d330?w=800"
+                "main": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200",
+                "interior": "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?w=1200",
+                "chef": "https://images.unsplash.com/photo-1544148103-0773bf10d330?w=1200"
             },
             "badges": ["Roman Style", "Bakery", "Perfect for Picnic"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": True},
@@ -1398,9 +1398,9 @@ async def seed_data():
                 {"name": "Patate Provola", "description": "Crispy potatoes, smoked provola, rosemary, sea salt", "price": 15}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?w=800",
-                "interior": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800",
-                "chef": "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=800"
+                "main": "https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?w=1200",
+                "interior": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200",
+                "chef": "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=1200"
             },
             "badges": ["Roman Style", "Daily Specials", "Local Favorite"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
@@ -1422,9 +1422,9 @@ async def seed_data():
                 {"name": "Belleville", "description": "Merguez, harissa cream, roasted peppers, mint", "price": 15}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=800",
-                "interior": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800",
-                "chef": "https://images.unsplash.com/photo-1585238341710-4d3ff484184d?w=800"
+                "main": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=1200",
+                "interior": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200",
+                "chef": "https://images.unsplash.com/photo-1585238341710-4d3ff484184d?w=1200"
             },
             "badges": ["Roman Style", "Creative Fusion", "Neighborhood Vibe"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": True, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
@@ -1446,9 +1446,9 @@ async def seed_data():
                 {"name": "Pizza Bianca", "description": "Just dough, olive oil, salt, rosemary – perfection in simplicity", "price": 4}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800",
-                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
-                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800"
+                "main": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200"
             },
             "badges": ["Roman Style", "Classic Pizza Bianca", "All Day"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
@@ -1470,9 +1470,9 @@ async def seed_data():
                 {"name": "Carbonara", "description": "Guanciale, pecorino cream, egg yolk, black pepper", "price": 18}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?w=800",
-                "interior": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800",
-                "chef": "https://images.unsplash.com/photo-1592498546551-222538011a27?w=800"
+                "main": "https://images.unsplash.com/photo-1600028068383-ea11a7a101f3?w=1200",
+                "interior": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200",
+                "chef": "https://images.unsplash.com/photo-1592498546551-222538011a27?w=1200"
             },
             "badges": ["Roman Style", "Legendary Bakery", "Great Wine List"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
@@ -1494,9 +1494,9 @@ async def seed_data():
                 {"name": "Pollo alla Cacciatora", "description": "Hunter's-style chicken, peppers, tomato in crispy pocket", "price": 9}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=800",
-                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800",
-                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800"
+                "main": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1200"
             },
             "badges": ["Roman Style", "Street Food", "Unique Concept"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
