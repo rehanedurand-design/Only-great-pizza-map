@@ -113,11 +113,16 @@ const PizzeriaDetail = () => {
   const [lists, setLists] = useState([]);
   const [showListDialog, setShowListDialog] = useState(false);
   const [refreshingWaitTime, setRefreshingWaitTime] = useState(false);
+  const [reviews, setReviews] = useState([]);
+  const [showReviewForm, setShowReviewForm] = useState(false);
+  const [reviewData, setReviewData] = useState({ rating: 5, comment: "" });
+  const [submittingReview, setSubmittingReview] = useState(false);
 
   const isFavorite = user?.favorites?.includes(id);
 
   useEffect(() => {
     fetchPizzeria();
+    fetchReviews();
     if (isAuthenticated) {
       fetchLists();
     }
@@ -133,6 +138,48 @@ const PizzeriaDetail = () => {
       navigate("/explore");
     } finally {
       setLoading(false);
+    }
+  };
+
+  const fetchReviews = async () => {
+    try {
+      const response = await axios.get(`${API}/reviews/pizzeria/${id}`);
+      setReviews(response.data);
+    } catch (error) {
+      console.error("Error fetching reviews:", error);
+    }
+  };
+
+  const submitReview = async () => {
+    if (!isAuthenticated) {
+      toast.error("Please login to write a review");
+      navigate("/auth");
+      return;
+    }
+
+    if (!reviewData.comment.trim()) {
+      toast.error("Please write a comment");
+      return;
+    }
+
+    setSubmittingReview(true);
+    try {
+      await axios.post(`${API}/reviews`, {
+        pizzeria_id: id,
+        rating: reviewData.rating,
+        comment: reviewData.comment
+      }, {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      toast.success("Review submitted!");
+      setShowReviewForm(false);
+      setReviewData({ rating: 5, comment: "" });
+      fetchReviews();
+    } catch (error) {
+      const message = error.response?.data?.detail || "Failed to submit review";
+      toast.error(message);
+    } finally {
+      setSubmittingReview(false);
     }
   };
 
