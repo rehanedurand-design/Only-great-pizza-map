@@ -366,6 +366,63 @@ async def get_wait_time(pizzeria_id: str):
     
     return generate_wait_time(pizzeria_id, pizzeria["review_count"])
 
+# ============ REVIEWS ROUTES ============
+
+@api_router.post("/reviews", response_model=ReviewResponse)
+async def create_review(review_data: ReviewCreate, current_user: dict = Depends(get_current_user)):
+    # Check if pizzeria exists
+    pizzeria = await db.pizzerias.find_one({"id": review_data.pizzeria_id})
+    if not pizzeria:
+        raise HTTPException(status_code=404, detail="Pizzeria not found")
+    
+    # Check if user already reviewed this pizzeria
+    existing = await db.reviews.find_one({
+        "user_id": current_user["id"],
+        "pizzeria_id": review_data.pizzeria_id
+    })
+    if existing:
+        raise HTTPException(status_code=400, detail="You already reviewed this pizzeria")
+    
+    review_id = str(uuid.uuid4())
+    review_doc = {
+        "id": review_id,
+        "user_id": current_user["id"],
+        "user_name": current_user["name"],
+        "pizzeria_id": review_data.pizzeria_id,
+        "rating": review_data.rating,
+        "comment": review_data.comment,
+        "created_at": datetime.now(timezone.utc).isoformat()
+    }
+    
+    await db.reviews.insert_one(review_doc)
+    return ReviewResponse(**review_doc)
+
+@api_router.get("/reviews/pizzeria/{pizzeria_id}", response_model=List[ReviewResponse])
+async def get_pizzeria_reviews(pizzeria_id: str):
+    reviews = await db.reviews.find(
+        {"pizzeria_id": pizzeria_id}, 
+        {"_id": 0}
+    ).sort("created_at", -1).to_list(100)
+    return reviews
+
+@api_router.get("/reviews/user", response_model=List[ReviewResponse])
+async def get_user_reviews(current_user: dict = Depends(get_current_user)):
+    reviews = await db.reviews.find(
+        {"user_id": current_user["id"]}, 
+        {"_id": 0}
+    ).sort("created_at", -1).to_list(100)
+    return reviews
+
+@api_router.delete("/reviews/{review_id}")
+async def delete_review(review_id: str, current_user: dict = Depends(get_current_user)):
+    result = await db.reviews.delete_one({
+        "id": review_id,
+        "user_id": current_user["id"]
+    })
+    if result.deleted_count == 0:
+        raise HTTPException(status_code=404, detail="Review not found")
+    return {"message": "Review deleted"}
+
 # ============ FAVORITES ROUTES ============
 
 @api_router.post("/favorites/{pizzeria_id}")
