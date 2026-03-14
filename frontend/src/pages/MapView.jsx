@@ -1,11 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
-import ReactDOMServer from "react-dom/server";
 import axios from "axios";
 import { API } from "@/App";
 import MapPopup from "@/components/MapPopup";
-import { PizzaPinElegant } from "@/components/PizzaPin";
 import { Sparkles, Navigation } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
@@ -19,11 +17,24 @@ L.Icon.Default.mergeOptions({
   shadowUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
 });
 
-// Custom elegant pizza markers using React component
+// Custom elegant pizza markers using inline SVG
 const createPizzaIcon = (style) => {
-  const svgString = ReactDOMServer.renderToStaticMarkup(
-    <PizzaPinElegant style={style} size={36} />
-  );
+  const bgColor = style === "neapolitan" ? "#9B2226" : "#DDA15E";
+  const accentColor = style === "neapolitan" ? "#DDA15E" : "#9B2226";
+  
+  const svgString = `
+    <svg width="36" height="45" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2))">
+      <path d="M20 0C9 0 0 9 0 20C0 31 20 50 20 50C20 50 40 31 40 20C40 9 31 0 20 0Z" fill="${bgColor}"/>
+      <circle cx="20" cy="18" r="12" fill="white"/>
+      <g transform="translate(11, 9)">
+        <path d="M9 2L17 16H1L9 2Z" fill="none" stroke="${bgColor}" stroke-width="1.5" stroke-linejoin="round"/>
+        <path d="M1 16Q9 19 17 16" fill="none" stroke="${bgColor}" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="7" cy="10" r="1.5" fill="${accentColor}"/>
+        <circle cx="11" cy="12" r="1.5" fill="${accentColor}"/>
+        <circle cx="9" cy="7" r="1" fill="${accentColor}"/>
+      </g>
+    </svg>
+  `;
   
   return L.divIcon({
     className: "pizza-marker",
