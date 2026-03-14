@@ -8,17 +8,12 @@ Create a mobile and web application called "Only Great Pizza Map Paris" - a cura
 2. **Local Foodies** - Parisians who want to discover the best pizza spots in their city
 3. **Casual Diners** - People looking for a quick, quality pizza meal nearby
 
-## Core Requirements (Static)
-- Interactive map with custom pizza-shaped pins
-- Curated pizzeria listings (rating 4.8+, 200+ reviews, artisanal pizza)
-- Filters by pizza style (Neapolitan/Roman), dough type, authenticity
-- Detailed pizzeria pages with photos, badges, signature pizzas
-- User accounts with favorites and custom lists
-- "Surprise me" random discovery feature
-- Editorial recommendations from food guides
-- Real-time wait time information
-- User reviews and ratings
-- GPS-based distance sorting
+## Design System (Updated March 14, 2026)
+- **Typography**: Antonio (condensed, uppercase headings), DM Sans (body), Caveat (accents)
+- **Colors**: Cream (#FDFBF7), Deep Brick (#9B2226), Olive (#606C38), Gold (#DDA15E), Ink (#1A1A1A)
+- **Style**: Architectural, minimalist, sharp corners, elegant
+- **Map Pins**: Custom illustrated pizza slice inside teardrop (brick=Neapolitan, gold=Roman)
+- **Images**: Grayscale-to-color hover effect
 
 ## Tech Stack
 - **Frontend**: React with Tailwind CSS, Leaflet/OpenStreetMap
@@ -27,9 +22,9 @@ Create a mobile and web application called "Only Great Pizza Map Paris" - a cura
 - **Authentication**: JWT-based
 - **PWA**: Service Worker for offline support
 
-## What's Been Implemented (March 14, 2026)
+## What's Been Implemented
 
-### Backend
+### Backend (Complete)
 - [x] User authentication (register, login, JWT tokens)
 - [x] Pizzeria endpoints (list, detail, filter, random/surprise)
 - [x] Favorites system (add, remove, list)
@@ -40,55 +35,32 @@ Create a mobile and web application called "Only Great Pizza Map Paris" - a cura
 - [x] **GPS distance calculation** (Haversine formula)
 - [x] **Sorting** by rating, distance, or wait time
 
-### Frontend
+### Frontend (Complete)
 - [x] Interactive Map with OpenStreetMap + Leaflet
-- [x] Custom pizza markers (red=Neapolitan, yellow=Roman)
+- [x] **Custom illustrated pizza pins** (minimalist, elegant SVG design)
 - [x] Explore page with grid layout (40 pizzerias)
+- [x] **Grayscale-to-color hover effect** on images
+- [x] **Antonio condensed uppercase typography**
 - [x] Filter system (style, dough, authenticity)
 - [x] Search functionality
-- [x] **Sort by rating, distance, or wait time**
-- [x] **"Use My Location" button** for GPS-based sorting
+- [x] Sort by rating, distance, or wait time
+- [x] "Use My Location" button for GPS-based sorting
 - [x] Pizzeria detail page with photos gallery
-- [x] **Wait time display** with crowd level and refresh button
-- [x] **User reviews section** with star ratings and comments
+- [x] Wait time display with crowd level and refresh button
+- [x] User reviews section with star ratings
 - [x] Auth pages (login/register)
 - [x] Favorites page
-- [x] Pizza Lists page with create/delete
+- [x] Pizza Lists page
 - [x] Navigation (Map, Explore, Favorites, Lists)
 - [x] "Surprise me" feature
-- [x] Mediterranean design theme
 - [x] **PWA support** (manifest.json, service worker, offline page)
 
 ## Data Notes
 - Wait times are **SIMULATED** based on time of day and popularity
 - Pizzeria data is **MOCK/CURATED** (not from Google Places API)
 
-## Prioritized Backlog
-
-### P0 - Critical (All Shipped!)
-- [x] Core map functionality
-- [x] 40 curated pizzerias with descriptions
-- [x] Real-time wait times
-- [x] User authentication
-- [x] Favorites & Lists system
-- [x] User reviews
-- [x] GPS distance sorting
-- [x] PWA offline support
-
-### P1 - Important (Next Phase)
-- [ ] User profile page with settings
-- [ ] Push notifications (requires Firebase/OneSignal)
-- [ ] Social sharing to Twitter/Instagram
-- [ ] Photo upload for reviews
-
-### P2 - Nice to Have
-- [ ] Admin panel for managing pizzerias
-- [ ] Integration with real Google Places API
-- [ ] Reservation system integration (TheFork)
-- [ ] Featured pizzeria partnerships
-
 ## Next Action Items
-1. Add user profile page
+1. Add user profile page with account settings
 2. Connect to real wait-time data source
-3. Add photo upload capability
+3. Add photo upload capability for reviews
 4. Consider premium partnerships for monetization
