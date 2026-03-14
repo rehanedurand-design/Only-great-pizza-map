@@ -1678,6 +1678,79 @@ async def seed_data():
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
             "recommended_by": ["Time Out", "Le Fooding"],
             "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        # === USER-REQUESTED PIZZERIAS ===
+        {
+            "id": "pz-041",
+            "name": "Ceprano",
+            "address": "5 Rue Constant Berthaut, 75020 Paris",
+            "neighborhood": "Jourdain",
+            "latitude": 48.8752,
+            "longitude": 2.3907,
+            "google_rating": 4.4,
+            "review_count": 200,
+            "pizza_style": "neapolitan",
+            "description": "A charming Neapolitan pizzeria in the heart of Belleville. Ceprano brings authentic wood-fired pizzas to the 20th arrondissement, with 48-hour matured dough using only water, flour, fresh yeast, and sea salt. Known for its beautiful floral decor, friendly atmosphere, and excellent vegan options including the classic marinara.",
+            "signature_pizzas": [
+                {"name": "Marinara", "description": "San Marzano tomatoes, garlic, oregano, EVOO - the classic cheese-free Neapolitan", "price": 12}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200"
+            },
+            "badges": ["Wood-Fired Oven", "Italian Pizzaiolo", "Vegan Options"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
+            "recommended_by": ["Local Favorite"],
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        {
+            "id": "pz-042",
+            "name": "Brutti E Cattivi",
+            "address": "6 Rue du Surmelin, 75020 Paris",
+            "neighborhood": "Pelleport",
+            "latitude": 48.8717,
+            "longitude": 2.4008,
+            "google_rating": 4.7,
+            "review_count": 350,
+            "pizza_style": "neapolitan",
+            "description": "An authentic Neapolitan gem hidden in the 20th arrondissement. Brutti E Cattivi - meaning 'ugly and bad' in Italian - delivers anything but with its beautiful, perfectly charred pizzas and warm neighborhood atmosphere. A favorite among locals for its genuine Italian hospitality and quality ingredients.",
+            "signature_pizzas": [
+                {"name": "Margherita DOC", "description": "Buffalo mozzarella, San Marzano tomatoes, fresh basil, EVOO", "price": 14}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200"
+            },
+            "badges": ["Italian Owners", "Italian Pizzaiolo", "Local Secret", "Terrace"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
+            "recommended_by": ["Tripadvisor"],
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        {
+            "id": "pz-043",
+            "name": "Fratellino",
+            "address": "11 Rue Saint-Lazare, 75009 Paris",
+            "neighborhood": "Saint-Lazare",
+            "latitude": 48.8756,
+            "longitude": 2.3372,
+            "google_rating": 4.9,
+            "review_count": 250,
+            "pizza_style": "neapolitan",
+            "description": "A stunning 4.9-rated gem near Gare Saint-Lazare. Fratellino brings authentic wood-fired Neapolitan pizza to the 9th, with a cozy atmosphere featuring an actual wood-fired oven in the dining room. The Travelers Choice award winner offers impeccable service and pizzas that rival the best in Naples.",
+            "signature_pizzas": [
+                {"name": "Diavola", "description": "Spicy salami, San Marzano, fior di latte, fresh chili", "price": 15}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200"
+            },
+            "badges": ["Top Rated Google", "Italian Pizzaiolo", "Wood-Fired Oven", "Travelers Choice"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
+            "recommended_by": ["Tripadvisor", "TheFork"],
+            "created_at": datetime.now(timezone.utc).isoformat()
         }
     ]
     
