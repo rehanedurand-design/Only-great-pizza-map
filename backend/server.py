@@ -77,6 +77,20 @@ class WaitTimeInfo(BaseModel):
     last_updated: str
     is_open: bool
 
+class ReviewCreate(BaseModel):
+    rating: int = Field(ge=1, le=5)
+    comment: str
+    pizzeria_id: str
+
+class ReviewResponse(BaseModel):
+    id: str
+    user_id: str
+    user_name: str
+    pizzeria_id: str
+    rating: int
+    comment: str
+    created_at: str
+
 class PizzeriaResponse(BaseModel):
     model_config = ConfigDict(extra="ignore")
     id: str
