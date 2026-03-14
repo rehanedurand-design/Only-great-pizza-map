@@ -7,9 +7,9 @@ module.exports = {
             colors: {
                 cream: "#FDFBF7",
                 paper: "#F6F1E6",
-                tomato: {
-                    DEFAULT: "#E63946",
-                    hover: "#D62839",
+                brick: {
+                    DEFAULT: "#9B2226",
+                    hover: "#7F1D1F",
                     light: "#FEE2E2"
                 },
                 olive: {
@@ -22,10 +22,15 @@ module.exports = {
                 },
                 gold: "#DDA15E",
                 ink: {
-                    DEFAULT: "#2B2D42",
+                    DEFAULT: "#1A1A1A",
                     light: "#4A4E69"
                 },
                 stone: "#8D99AE",
+                // Legacy compatibility
+                tomato: {
+                    DEFAULT: "#9B2226",
+                    hover: "#7F1D1F"
+                },
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
                 ring: "hsl(var(--ring))",
@@ -68,15 +73,20 @@ module.exports = {
                 }
             },
             fontFamily: {
-                serif: ["Playfair Display", "Georgia", "serif"],
-                hand: ["Patrick Hand", "cursive"],
-                sans: ["Lato", "sans-serif"],
-                ui: ["Inter", "sans-serif"]
+                heading: ["Antonio", "sans-serif"],
+                body: ["DM Sans", "sans-serif"],
+                accent: ["Caveat", "cursive"],
+                // Legacy
+                serif: ["Antonio", "Georgia", "serif"],
+                hand: ["Caveat", "cursive"],
+                sans: ["DM Sans", "sans-serif"],
+                ui: ["DM Sans", "sans-serif"]
             },
             borderRadius: {
                 lg: "var(--radius)",
                 md: "calc(var(--radius) - 2px)",
-                sm: "calc(var(--radius) - 4px)"
+                sm: "calc(var(--radius) - 4px)",
+                none: "0px"
             },
             keyframes: {
                 "accordion-down": {

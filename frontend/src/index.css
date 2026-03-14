@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Patrick+Hand&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=DM+Sans:opsz,wght@9..40,100..1000&family=Caveat:wght@400..700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,12 +6,12 @@
 
 body {
     margin: 0;
-    font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
         "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #FDFBF7;
-    color: #2B2D42;
+    color: #1A1A1A;
 }
 
 code {
@@ -20,8 +20,8 @@ code {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -30,69 +30,56 @@ code {
 
 ::-webkit-scrollbar-thumb {
     background: #8D99AE;
-    border-radius: 4px;
+    border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #4A4E69;
+    background: #1A1A1A;
 }
 
 /* Leaflet map styles */
 .leaflet-container {
     width: 100%;
     height: 100%;
-    font-family: 'Lato', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .leaflet-popup-content-wrapper {
-    border-radius: 12px;
+    border-radius: 0;
     padding: 0;
     overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .leaflet-popup-content {
     margin: 0;
-    min-width: 200px;
+    min-width: 220px;
 }
 
 .leaflet-popup-tip {
     background: white;
 }
 
-/* Custom marker styles */
+/* Custom elegant pizza markers */
 .pizza-marker {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    font-size: 20px;
     transition: transform 0.2s ease;
 }
 
 .pizza-marker:hover {
-    transform: scale(1.2);
-}
-
-.pizza-marker.neapolitan {
-    background: linear-gradient(135deg, #E63946 0%, #D62839 100%);
-}
-
-.pizza-marker.roman {
-    background: linear-gradient(135deg, #DDA15E 0%, #BC6C25 100%);
+    transform: scale(1.15);
 }
 
 /* User location marker */
 .user-marker {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background: #606C38;
-    border: 3px solid white;
+    border: 2px solid white;
     border-radius: 50%;
-    box-shadow: 0 0 0 8px rgba(96, 108, 56, 0.2);
+    box-shadow: 0 0 0 6px rgba(96, 108, 56, 0.25);
     animation: pulse 2s infinite;
 }
 
@@ -101,7 +88,7 @@ code {
         box-shadow: 0 0 0 0 rgba(96, 108, 56, 0.4);
     }
     70% {
-        box-shadow: 0 0 0 15px rgba(96, 108, 56, 0);
+        box-shadow: 0 0 0 12px rgba(96, 108, 56, 0);
     }
     100% {
         box-shadow: 0 0 0 0 rgba(96, 108, 56, 0);
@@ -111,28 +98,28 @@ code {
 @layer base {
     :root {
         --background: 45 33% 98%;
-        --foreground: 232 21% 21%;
+        --foreground: 0 0% 10%;
         --card: 0 0% 100%;
-        --card-foreground: 232 21% 21%;
+        --card-foreground: 0 0% 10%;
         --popover: 0 0% 100%;
-        --popover-foreground: 232 21% 21%;
-        --primary: 355 75% 56%;
+        --popover-foreground: 0 0% 10%;
+        --primary: 358 65% 37%;
         --primary-foreground: 0 0% 100%;
         --secondary: 77 30% 32%;
         --secondary-foreground: 0 0% 100%;
-        --muted: 43 35% 93%;
-        --muted-foreground: 232 10% 40%;
-        --accent: 30 51% 44%;
-        --accent-foreground: 0 0% 100%;
-        --destructive: 355 75% 56%;
+        --muted: 220 14% 96%;
+        --muted-foreground: 220 9% 46%;
+        --accent: 30 51% 62%;
+        --accent-foreground: 0 0% 10%;
+        --destructive: 358 65% 37%;
         --destructive-foreground: 0 0% 100%;
-        --border: 220 13% 80%;
-        --input: 220 13% 80%;
-        --ring: 355 75% 56%;
-        --radius: 0.75rem;
-        --chart-1: 355 75% 56%;
+        --border: 220 13% 91%;
+        --input: 220 13% 91%;
+        --ring: 358 65% 37%;
+        --radius: 0rem;
+        --chart-1: 358 65% 37%;
         --chart-2: 77 30% 32%;
-        --chart-3: 30 51% 44%;
+        --chart-3: 30 51% 62%;
         --chart-4: 38 64% 62%;
         --chart-5: 220 13% 60%;
     }
@@ -144,6 +131,9 @@ code {
     }
     body {
         @apply bg-cream text-ink;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-heading;
     }
 }
 
@@ -168,14 +158,6 @@ code {
         border-right-width: inherit;
         border-top-width: inherit;
         border-bottom-width: inherit;
-        border-left-style: inherit;
-        border-right-style: inherit;
-        border-top-style: inherit;
-        border-bottom-style: inherit;
-        border-left-color: inherit;
-        border-right-color: inherit;
-        border-top-color: inherit;
-        border-bottom-color: inherit;
     }
 }
 
@@ -195,9 +177,29 @@ code {
     }
 }
 
-/* Hand-drawn border effect */
-.hand-drawn-border {
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+/* Architectural typography */
+.heading-xl {
+    @apply font-heading font-bold text-5xl md:text-6xl tracking-tight uppercase leading-none;
+}
+
+.heading-lg {
+    @apply font-heading font-semibold text-3xl md:text-4xl tracking-tight uppercase;
+}
+
+.heading-md {
+    @apply font-heading font-medium text-xl md:text-2xl tracking-wide uppercase;
+}
+
+.body-text {
+    @apply font-body text-base leading-relaxed text-ink;
+}
+
+.caption-text {
+    @apply font-body text-sm text-stone uppercase tracking-widest;
+}
+
+.accent-text {
+    @apply font-accent text-xl md:text-2xl text-terracotta -rotate-2;
 }
 
 /* Paper texture overlay */
@@ -209,7 +211,17 @@ code {
     right: 0;
     bottom: 0;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    opacity: 0.03;
+    opacity: 0.02;
     pointer-events: none;
     z-index: 1;
+}
+
+/* Card hover effect - grayscale to color */
+.card-image-grayscale {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.group:hover .card-image-grayscale {
+    filter: grayscale(0%);
 }

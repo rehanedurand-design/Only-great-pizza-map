@@ -1,4 +1,4 @@
-/* Main App Styles */
+/* Main App Styles - Architectural Design */
 .app-container {
     min-height: 100vh;
     display: flex;
@@ -15,59 +15,59 @@
 }
 
 .nav-link.active {
-    @apply text-tomato;
+    @apply text-brick;
 }
 
-/* Cards */
+/* Cards - Sharp, Architectural */
 .pizzeria-card {
-    @apply bg-white rounded-xl overflow-hidden shadow-sm border border-stone/10 transition-all duration-300;
+    @apply bg-white overflow-hidden border border-stone/20 transition-all duration-300;
 }
 
 .pizzeria-card:hover {
-    @apply shadow-md -translate-y-1;
+    @apply border-brick shadow-lg;
 }
 
-/* Badges */
+/* Badges - Minimal */
 .badge-neapolitan {
-    @apply bg-tomato/10 text-tomato border border-tomato/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider;
+    @apply bg-brick/10 text-brick border border-brick/30 px-3 py-1 text-xs font-heading uppercase tracking-widest;
 }
 
 .badge-roman {
-    @apply bg-terracotta/10 text-terracotta border border-terracotta/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider;
+    @apply bg-gold/20 text-terracotta border border-gold/40 px-3 py-1 text-xs font-heading uppercase tracking-widest;
 }
 
 .badge-verified {
-    @apply bg-olive/10 text-olive border border-olive/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider;
+    @apply bg-olive/10 text-olive border border-olive/30 px-3 py-1 text-xs font-heading uppercase tracking-widest;
 }
 
-/* Filter Pills */
+/* Filter Pills - Sharp edges */
 .filter-pill {
-    @apply px-4 py-2 rounded-full text-sm font-medium border transition-all cursor-pointer;
+    @apply px-4 py-2 text-sm font-heading uppercase tracking-wider border transition-all cursor-pointer;
 }
 
 .filter-pill.inactive {
-    @apply bg-paper border-stone/20 text-ink/70 hover:border-ink/40;
+    @apply bg-cream border-stone/30 text-ink/70 hover:border-ink;
 }
 
 .filter-pill.active {
-    @apply bg-tomato border-tomato text-white;
+    @apply bg-brick border-brick text-white;
 }
 
-/* Buttons */
+/* Buttons - Architectural */
 .btn-primary {
-    @apply bg-tomato text-white font-sans font-bold py-3 px-6 rounded-full shadow-lg transition-all;
+    @apply bg-brick text-white font-heading uppercase tracking-widest py-3 px-8 transition-all border-2 border-brick;
 }
 
 .btn-primary:hover {
-    @apply bg-tomato-hover scale-105;
+    @apply bg-brick-hover border-brick-hover;
 }
 
 .btn-secondary {
-    @apply bg-paper text-ink border-2 border-ink/10 font-sans font-semibold py-3 px-6 rounded-full transition-all;
+    @apply bg-transparent text-brick border-2 border-brick font-heading uppercase tracking-widest py-3 px-8 transition-all;
 }
 
 .btn-secondary:hover {
-    @apply border-ink/30;
+    @apply bg-brick text-white;
 }
 
 /* Map container */
@@ -82,29 +82,12 @@
     }
 }
 
-/* Surprise button animation */
-.surprise-btn {
-    @apply relative overflow-hidden;
-}
-
-.surprise-btn::before {
-    content: '';
-    @apply absolute inset-0 bg-gradient-to-r from-tomato via-terracotta to-tomato;
-    background-size: 200% 100%;
-    animation: shimmer 2s infinite;
-}
-
-@keyframes shimmer {
-    0% { background-position: 200% 0; }
-    100% { background-position: -200% 0; }
-}
-
 /* Photo gallery */
 .photo-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 8px;
+    gap: 4px;
     height: 300px;
 }
 
@@ -119,15 +102,56 @@
 
 /* Skeleton loading */
 .skeleton {
-    @apply bg-stone/20 animate-pulse rounded;
+    @apply bg-stone/20 animate-pulse;
 }
 
 /* Editorial quote style */
 .editorial-quote {
-    @apply relative pl-4 border-l-4 border-terracotta italic text-ink/80;
+    @apply relative pl-6 border-l-2 border-brick italic text-ink/80 font-body;
 }
 
 /* Recommended badge */
 .recommended-badge {
-    @apply inline-flex items-center gap-1 px-2 py-1 bg-olive/10 text-olive text-xs font-medium rounded-full;
+    @apply inline-flex items-center gap-1 px-2 py-1 bg-olive/10 text-olive text-xs font-heading uppercase tracking-wider;
+}
+
+/* Bento Grid for Explore */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.bento-card-small {
+    grid-column: span 4;
+}
+
+.bento-card-medium {
+    grid-column: span 6;
+}
+
+.bento-card-large {
+    grid-column: span 8;
+}
+
+@media (max-width: 1024px) {
+    .bento-card-small,
+    .bento-card-medium,
+    .bento-card-large {
+        grid-column: span 6;
+    }
+}
+
+@media (max-width: 768px) {
+    .bento-card-small,
+    .bento-card-medium,
+    .bento-card-large {
+        grid-column: span 1;
+    }
 }
