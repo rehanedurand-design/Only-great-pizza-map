@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline - Pizza Paris</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Lato', -apple-system, sans-serif;
+      background: #FDFBF7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+    }
+    .emoji { font-size: 80px; margin-bottom: 24px; }
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 28px;
+      color: #2B2D42;
+      margin-bottom: 12px;
+    }
+    p {
+      color: #8D99AE;
+      margin-bottom: 24px;
+      max-width: 300px;
+    }
+    button {
+      background: #E63946;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 9999px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:hover { background: #D62839; }
+  </style>
+</head>
+<body>
+  <div class="emoji">🍕</div>
+  <h1>You're Offline</h1>
+  <p>Don't worry, your pizza cravings will be satisfied as soon as you're back online!</p>
+  <button onclick="window.location.reload()">Try Again</button>
+</body>
+</html>

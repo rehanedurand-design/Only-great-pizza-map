@@ -1,0 +1,39 @@
+{
+  "name": "Only Great Pizza Map Paris",
+  "short_name": "Pizza Paris",
+  "description": "Discover the 40 best pizzerias in Paris with real-time wait times",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDFBF7",
+  "theme_color": "#E63946",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/pizza-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/pizza-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "lifestyle", "travel"],
+  "lang": "en",
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Explore Pizzerias",
+      "url": "/explore",
+      "description": "Browse all pizzerias"
+    },
+    {
+      "name": "Surprise Me",
+      "url": "/",
+      "description": "Get a random pizza recommendation"
+    }
+  ]
+}
