@@ -1008,25 +1008,25 @@ async def seed_data():
         {
             "id": "pz-016",
             "name": "Libertino",
-            "address": "11 Rue du Colisée, 75008 Paris",
-            "neighborhood": "Champs-Élysées",
-            "latitude": 48.8715,
-            "longitude": 2.3072,
+            "address": "44 Rue de Paradis, 75010 Paris",
+            "neighborhood": "Gare du Nord",
+            "latitude": 48.8752,
+            "longitude": 2.3498,
             "google_rating": 4.8,
-            "review_count": 540,
+            "review_count": 2200,
             "pizza_style": "neapolitan",
-            "description": "A sophisticated escape from the Champs-Élysées tourist traps. Neapolitan pizza with a refined twist, served in a space that channels dolce vita elegance. The antipasti alone merit a visit.",
+            "description": "Big Mamma group's theatrical Tuscan-inspired trattoria near Gare du Nord. A dramatic Garden of Eden setting with multiple unique spaces including an open kitchen, pastry workshop, and revolving disco-bar in the basement. The 220-seat restaurant delivers Neapolitan pizzas alongside truffle pastas and Roman-style dishes. An Instagram-worthy destination with serious culinary credentials.",
             "signature_pizzas": [
-                {"name": "Libertino", "description": "Nduja, ventricina, fresh chili, stracciatella, honey", "price": 19}
+                {"name": "Mammagherita", "description": "San Marzano DOP, fior di latte, fresh basil, EVOO - the Big Mamma signature", "price": 14}
             ],
             "photos": {
                 "main": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200",
                 "interior": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1200",
                 "chef": "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=1200"
             },
-            "badges": ["Italian Pizzaiolo", "Great Wine List", "Sourdough Dough"],
-            "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
-            "recommended_by": ["Le Figaro", "Time Out"],
+            "badges": ["Italian Pizzaiolo", "Great Wine List", "Famous Tiramisu", "Big Mamma Group"],
+            "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
+            "recommended_by": ["Big Mamma", "Time Out"],
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
