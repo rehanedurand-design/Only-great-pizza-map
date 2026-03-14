@@ -127,6 +127,12 @@ const PizzeriaCard = ({ pizzeria, onFavoriteChange }) => {
         <div className="flex items-center gap-2 text-sm text-stone mb-2">
           <MapPin size={14} />
           <span>{pizzeria.neighborhood}</span>
+          {pizzeria.distance && (
+            <>
+              <span>•</span>
+              <span className="text-olive font-medium">{pizzeria.distance} km</span>
+            </>
+          )}
         </div>
 
         <div className="flex items-center justify-between">
