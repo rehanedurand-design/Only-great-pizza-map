@@ -152,6 +152,7 @@ function AppContent() {
         <Route path="/explore" element={<Explore />} />
         <Route path="/pizzeria/:id" element={<PizzeriaDetail />} />
         <Route path="/auth" element={<Auth />} />
+        <Route path="/admin" element={<Admin />} />
         <Route 
           path="/favorites" 
           element={
