@@ -29,16 +29,17 @@ Create a mobile and web application called "Only Great Pizza Map Paris" - a cura
 - [x] Pizzeria endpoints (list, detail, filter, random/surprise)
 - [x] Favorites system (add, remove, list)
 - [x] Pizza lists (CRUD, add/remove pizzerias)
-- [x] **40 curated pizzerias** (28 Neapolitan, 12 Roman) with editorial descriptions
+- [x] **43 curated pizzerias** (31 Neapolitan, 12 Roman) with editorial descriptions
 - [x] **Real-time wait time simulation** based on time of day & popularity
 - [x] **User reviews system** (create, read, delete)
 - [x] **GPS distance calculation** (Haversine formula)
 - [x] **Sorting** by rating, distance, or wait time
+- [x] **Idempotent POST /api/pizzerias** - prevents duplicate entries
 
 ### Frontend (Complete)
 - [x] Interactive Map with OpenStreetMap + Leaflet
 - [x] **Custom illustrated pizza pins** (minimalist, elegant SVG design)
-- [x] Explore page with grid layout (40 pizzerias)
+- [x] Explore page with grid layout (43 pizzerias)
 - [x] **Grayscale-to-color hover effect** on images
 - [x] **Antonio condensed uppercase typography**
 - [x] Filter system (style, dough, authenticity)
@@ -54,13 +55,27 @@ Create a mobile and web application called "Only Great Pizza Map Paris" - a cura
 - [x] Navigation (Map, Explore, Favorites, Lists)
 - [x] "Surprise me" feature
 - [x] **PWA support** (manifest.json, service worker, offline page)
+- [x] **Admin Panel** (/admin route) for CRUD operations
+
+## Latest Updates (March 14, 2026)
+
+### Added 4 User-Requested Pizzerias:
+1. **Ceprano** - 5 Rue Constant Berthaut, 75020 Paris (Jourdain) - 4.4★
+2. **Brutti E Cattivi** - 6 Rue du Surmelin, 75020 Paris (Pelleport) - 4.7★
+3. **Fratellino** - 11 Rue Saint-Lazare, 75009 Paris (Saint-Lazare) - 4.9★
+4. **Libertino** (Big Mamma) - 44 Rue de Paradis, 75010 Paris (Gare du Nord) - 4.8★ (updated address)
+
+### Fixed Data Duplication Issue:
+- Made POST /api/pizzerias idempotent (checks for existing name before insert)
+- Added pizzerias to seed data for persistence across restarts
 
 ## Data Notes
 - Wait times are **SIMULATED** based on time of day and popularity
 - Pizzeria data is **MOCK/CURATED** (not from Google Places API)
 
 ## Next Action Items
-1. Add user profile page with account settings
-2. Connect to real wait-time data source
-3. Add photo upload capability for reviews
-4. Consider premium partnerships for monetization
+1. Complete Admin Panel testing
+2. Add user profile page with account settings
+3. Connect to real wait-time data source
+4. Add photo upload capability for reviews
+5. Consider premium partnerships for monetization
