@@ -1,0 +1,155 @@
+{
+  "project_name": "Only Great Pizza Map Paris",
+  "design_philosophy": {
+    "persona": "E1 - The Anti-AI Designer",
+    "core_concept": "A curated, hand-illustrated food guide for the digital age. Warm, tactile, and authentic.",
+    "aesthetic": "Mediterranean Warmth meets Parisian Chic. Think: textured paper, ink stamps, sun-baked colors, and elegant typography.",
+    "principles": [
+      "Fusion: Digital utility x Analog soul (Maps + Illustrations)",
+      "Emotion: Hunger and Wanderlust. Every image must look delicious or transportive.",
+      "Content: The 'Guide' voice. Expert, opinionated, and curated.",
+      "Tactility: No flat colors. Use noise, grain, and subtle borders to mimic paper."
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Playfair Display, serif",
+      "subheadings": "Patrick Hand, cursive",
+      "body": "Lato, sans-serif",
+      "ui": "Inter, sans-serif"
+    },
+    "usage_rules": {
+      "h1": "text-4xl md:text-6xl font-serif font-bold tracking-tight text-ink-black",
+      "h2": "text-3xl md:text-4xl font-serif font-semibold text-ink-black",
+      "h3": "text-xl md:text-2xl font-serif font-medium text-terracotta",
+      "accent": "font-hand text-lg text-olive-green rotate-[-2deg]",
+      "body": "text-base md:text-lg text-ink-black/80 leading-relaxed"
+    },
+    "import_instruction": "Add these fonts via Google Fonts in index.html or CSS: Playfair Display (400,700), Patrick Hand (400), Lato (400,700)."
+  },
+  "colors": {
+    "palette": {
+      "background": {
+        "default": "#FDFBF7",
+        "paper": "#F6F1E6",
+        "card": "#FFFFFF"
+      },
+      "primary": {
+        "tomato": "#E63946",
+        "tomato_hover": "#D62839"
+      },
+      "secondary": {
+        "olive": "#606C38",
+        "olive_light": "#FEFAE0"
+      },
+      "accent": {
+        "terracotta": "#BC6C25",
+        "gold": "#DDA15E"
+      },
+      "neutral": {
+        "ink_black": "#2B2D42",
+        "charcoal": "#4A4E69",
+        "stone": "#8D99AE"
+      },
+      "utility": {
+        "success": "#606C38",
+        "warning": "#DDA15E",
+        "error": "#E63946"
+      }
+    },
+    "tailwind_config_extension": {
+      "colors": {
+        "cream": "#FDFBF7",
+        "paper": "#F6F1E6",
+        "tomato": "#E63946",
+        "olive": "#606C38",
+        "terracotta": "#BC6C25",
+        "ink": "#2B2D42"
+      }
+    }
+  },
+  "visual_enhancers": {
+    "texture": {
+      "noise": "url('data:image/svg+xml;base64,...') or simple CSS noise overlay opacity-5",
+      "paper_shadow": "box-shadow: 2px 4px 12px rgba(43, 45, 66, 0.08)"
+    },
+    "borders": {
+      "hand_drawn": "border-2 border-ink/10 rounded-[255px_15px_225px_15px/15px_225px_15px_255px]",
+      "card": "rounded-xl border border-stone/20 shadow-sm hover:shadow-md transition-all duration-300"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px, rounded line caps. Use 'Tomato' color for active states."
+    }
+  },
+  "layout_strategies": {
+    "mobile_first": "Bottom sheet navigation for maps. Full-screen immersive lists.",
+    "map_view": "Full height minus header/nav. Custom markers.",
+    "bento_grid": "Use for 'Explore' page. Mix of large featured pizzerias and small category tiles.",
+    "container": "max-w-7xl mx-auto px-4 md:px-8"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-tomato text-white font-sans font-bold py-3 px-6 rounded-full shadow-lg hover:bg-tomato_hover hover:scale-105 transition-transform",
+      "secondary": "bg-paper text-ink border-2 border-ink/10 font-sans font-semibold py-3 px-6 rounded-full hover:border-ink/30",
+      "ghost": "text-ink hover:bg-ink/5 font-serif italic"
+    },
+    "cards": {
+      "pizzeria_card": "bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md group cursor-pointer border border-stone/10",
+      "image_aspect": "aspect-[4/3] object-cover w-full group-hover:scale-105 transition-transform duration-500"
+    },
+    "badges": {
+      "neapolitan": "bg-tomato/10 text-tomato border border-tomato/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider",
+      "roman": "bg-terracotta/10 text-terracotta border border-terracotta/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider",
+      "verified": "bg-olive/10 text-olive border border-olive/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider"
+    },
+    "map_markers": {
+      "neapolitan": "Red circular pin with pizza slice icon",
+      "roman": "Yellow/Terracotta square pin with pizza slice icon"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1749867817713-4dc76f47dca4",
+      "pizzeria_defaults": [
+        "https://images.unsplash.com/photo-1626137071802-2689ccffd089",
+        "https://images.unsplash.com/photo-1689915972091-debe902f72fd",
+        "https://images.unsplash.com/photo-1695284512188-b5b588034b80"
+      ],
+      "paris_atmosphere": [
+        "https://images.unsplash.com/photo-1602594323720-79b579e4d20e",
+        "https://images.unsplash.com/photo-1577056922428-a511301a562d"
+      ],
+      "ingredients": [
+        "https://images.unsplash.com/photo-1760445530191-55f1d7a8cfd6",
+        "https://images.unsplash.com/photo-1766596737206-214abffe65bf"
+      ],
+      "chef": "https://images.unsplash.com/photo-1592498546551-222538011a27"
+    },
+    "icons_instruction": "Use lucide-react. For map pins, create a custom divIcon in Leaflet containing a Lucide icon."
+  },
+  "instructions_to_main_agent": {
+    "setup": [
+      "Install 'lucide-react' for icons.",
+      "Install 'leaflet' and 'react-leaflet' for maps.",
+      "Update tailwind.config.js with the custom color palette.",
+      "Add the Google Fonts to the index.html or CSS."
+    ],
+    "implementation_priorities": [
+      "1. Map View: This is the core. Make it smooth. Use custom markers.",
+      "2. Pizzeria Card: Needs to look delicious. High quality images.",
+      "3. Filters: Make them accessible and easy to toggle (Pills style).",
+      "4. 'Surprise Me': A fun, animated button that picks a random spot."
+    ],
+    "anti_patterns": [
+      "DO NOT use default blue links.",
+      "DO NOT use pure black (#000000). Use Ink Black (#2B2D42).",
+      "DO NOT make it look like a dashboard. It's a lifestyle guide."
+    ]
+  },
+  "universal_guidelines": {
+    "interactions": "All buttons must have active/hover states. Cards should lift on hover.",
+    "accessibility": "Ensure text contrast on the Cream background. Use darker Ink Black for body text.",
+    "testing": "Add data-testid to all interactive elements (e.g., 'filter-neapolitan', 'map-pin-1')."
+  }
+}
