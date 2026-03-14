@@ -377,7 +377,54 @@ class PizzeriaCreate(BaseModel):
 
 @api_router.post("/pizzerias", response_model=PizzeriaResponse)
 async def create_pizzeria(data: PizzeriaCreate):
-    """Add a new pizzeria to the database"""
+    """Add or update a pizzeria (idempotent - checks by name to avoid duplicates)"""
+    # Check for existing pizzeria by name (case-insensitive)
+    existing = await db.pizzerias.find_one(
+        {"name": {"$regex": f"^{data.name}$", "$options": "i"}},
+        {"_id": 0}
+    )
+    
+    if existing:
+        # Update existing entry
+        update_doc = {
+            "address": data.address,
+            "neighborhood": data.neighborhood,
+            "latitude": data.latitude,
+            "longitude": data.longitude,
+            "google_rating": data.google_rating,
+            "review_count": data.review_count,
+            "pizza_style": data.pizza_style,
+            "description": data.description,
+            "signature_pizzas": [
+                {
+                    "name": data.signature_pizza_name,
+                    "description": data.signature_pizza_description,
+                    "price": data.signature_pizza_price
+                }
+            ],
+            "photos": {
+                "main": data.photo_main,
+                "interior": data.photo_interior,
+                "chef": data.photo_chef
+            },
+            "badges": data.badges,
+            "filters": {
+                "sourdough": data.sourdough,
+                "long_fermentation": data.long_fermentation,
+                "gluten_free": data.gluten_free,
+                "italian_owners": data.italian_owners,
+                "italian_pizzaiolo": data.italian_pizzaiolo,
+                "good_wine": data.good_wine,
+                "famous_tiramisu": data.famous_tiramisu
+            },
+            "recommended_by": data.recommended_by
+        }
+        await db.pizzerias.update_one({"id": existing["id"]}, {"$set": update_doc})
+        updated = await db.pizzerias.find_one({"id": existing["id"]}, {"_id": 0})
+        updated["wait_time"] = generate_wait_time(existing["id"], data.review_count)
+        return updated
+    
+    # Create new entry
     pizzeria_id = f"pz-{str(uuid.uuid4())[:8]}"
     
     pizzeria_doc = {
