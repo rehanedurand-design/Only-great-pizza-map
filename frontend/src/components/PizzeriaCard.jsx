@@ -1,8 +1,42 @@
 import { useNavigate } from "react-router-dom";
-import { Star, MapPin, Heart } from "lucide-react";
+import { Star, MapPin, Heart, Clock, Users } from "lucide-react";
 import { useAuth, API } from "@/App";
 import axios from "axios";
 import { toast } from "sonner";
+
+const WaitTimeBadge = ({ waitTime }) => {
+  if (!waitTime || !waitTime.is_open) {
+    return (
+      <div className="flex items-center gap-1 text-xs px-2 py-1 bg-stone/20 text-stone rounded-full">
+        <Clock size={12} />
+        <span>Closed</span>
+      </div>
+    );
+  }
+
+  const { current_wait, crowd_level } = waitTime;
+  
+  const colors = {
+    low: "bg-olive/20 text-olive",
+    moderate: "bg-gold/30 text-terracotta",
+    busy: "bg-tomato/20 text-tomato",
+    very_busy: "bg-tomato/30 text-tomato"
+  };
+
+  const labels = {
+    low: "No wait",
+    moderate: `~${current_wait} min`,
+    busy: `~${current_wait} min`,
+    very_busy: `~${current_wait}+ min`
+  };
+
+  return (
+    <div className={`flex items-center gap-1 text-xs px-2 py-1 rounded-full font-medium ${colors[crowd_level]}`}>
+      <Users size={12} />
+      <span>{labels[crowd_level]}</span>
+    </div>
+  );
+};
 
 const PizzeriaCard = ({ pizzeria, onFavoriteChange }) => {
   const navigate = useNavigate();
@@ -101,6 +135,7 @@ const PizzeriaCard = ({ pizzeria, onFavoriteChange }) => {
             <span className="font-bold text-ink">{pizzeria.google_rating}</span>
             <span className="text-stone text-sm">({pizzeria.review_count})</span>
           </div>
+          <WaitTimeBadge waitTime={pizzeria.wait_time} />
         </div>
 
         {/* Mini Badges */}

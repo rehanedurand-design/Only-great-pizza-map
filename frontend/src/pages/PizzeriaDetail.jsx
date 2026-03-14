@@ -15,7 +15,9 @@ import {
   ChefHat,
   Wheat,
   Leaf,
-  Plus
+  Plus,
+  Users,
+  RefreshCw
 } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
@@ -41,6 +43,67 @@ const badgeIcons = {
   "Seasonal Menu": Leaf,
 };
 
+const WaitTimeCard = ({ waitTime, onRefresh, refreshing }) => {
+  if (!waitTime) return null;
+
+  const { is_open, current_wait, crowd_level, last_updated } = waitTime;
+
+  if (!is_open) {
+    return (
+      <div className="bg-stone/10 rounded-xl p-4 mb-6">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Clock size={20} className="text-stone" />
+            <span className="font-semibold text-stone">Currently Closed</span>
+          </div>
+        </div>
+        <p className="text-sm text-stone mt-1">Opens at 11:00 AM</p>
+      </div>
+    );
+  }
+
+  const colors = {
+    low: { bg: "bg-olive/10", text: "text-olive", label: "Not busy" },
+    moderate: { bg: "bg-gold/20", text: "text-terracotta", label: "Moderately busy" },
+    busy: { bg: "bg-tomato/10", text: "text-tomato", label: "Busy" },
+    very_busy: { bg: "bg-tomato/20", text: "text-tomato", label: "Very busy" }
+  };
+
+  const style = colors[crowd_level] || colors.moderate;
+
+  return (
+    <div className={`${style.bg} rounded-xl p-4 mb-6`} data-testid="wait-time-card">
+      <div className="flex items-center justify-between mb-2">
+        <div className="flex items-center gap-2">
+          <Users size={20} className={style.text} />
+          <span className={`font-semibold ${style.text}`}>{style.label}</span>
+        </div>
+        <button 
+          onClick={onRefresh}
+          disabled={refreshing}
+          className="p-2 hover:bg-white/50 rounded-full transition-colors"
+          data-testid="refresh-wait-time-btn"
+        >
+          <RefreshCw size={16} className={`text-ink/60 ${refreshing ? 'animate-spin' : ''}`} />
+        </button>
+      </div>
+      
+      <div className="flex items-baseline gap-1">
+        <span className={`text-3xl font-bold ${style.text}`}>
+          {current_wait === 0 ? "No" : `~${current_wait}`}
+        </span>
+        <span className={`text-lg ${style.text}`}>
+          {current_wait === 0 ? "wait" : "min wait"}
+        </span>
+      </div>
+      
+      <p className="text-xs text-stone mt-2">
+        Updated {new Date(last_updated).toLocaleTimeString()}
+      </p>
+    </div>
+  );
+};
+
 const PizzeriaDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -49,6 +112,7 @@ const PizzeriaDetail = () => {
   const [loading, setLoading] = useState(true);
   const [lists, setLists] = useState([]);
   const [showListDialog, setShowListDialog] = useState(false);
+  const [refreshingWaitTime, setRefreshingWaitTime] = useState(false);
 
   const isFavorite = user?.favorites?.includes(id);
 
@@ -69,6 +133,18 @@ const PizzeriaDetail = () => {
       navigate("/explore");
     } finally {
       setLoading(false);
+    }
+  };
+
+  const refreshWaitTime = async () => {
+    setRefreshingWaitTime(true);
+    try {
+      const response = await axios.get(`${API}/pizzerias/${id}/wait-time`);
+      setPizzeria(prev => ({ ...prev, wait_time: response.data }));
+    } catch (error) {
+      toast.error("Failed to refresh wait time");
+    } finally {
+      setRefreshingWaitTime(false);
     }
   };
 
@@ -209,6 +285,13 @@ const PizzeriaDetail = () => {
 
       {/* Content */}
       <div className="px-4 -mt-4 relative z-10">
+        {/* Wait Time Card */}
+        <WaitTimeCard 
+          waitTime={pizzeria.wait_time} 
+          onRefresh={refreshWaitTime}
+          refreshing={refreshingWaitTime}
+        />
+
         {/* Quick Info Card */}
         <div className="bg-white rounded-2xl shadow-md p-5 mb-6">
           <div className="flex items-center gap-4 mb-4">
