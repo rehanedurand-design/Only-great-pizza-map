@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
+import ReactDOMServer from "react-dom/server";
 import axios from "axios";
 import { API } from "@/App";
 import MapPopup from "@/components/MapPopup";
-import { Sparkles, Navigation, Filter } from "lucide-react";
+import { PizzaPinElegant } from "@/components/PizzaPin";
+import { Sparkles, Navigation } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 import "leaflet/dist/leaflet.css";
@@ -17,30 +19,18 @@ L.Icon.Default.mergeOptions({
   shadowUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
 });
 
-// Custom pizza markers
+// Custom elegant pizza markers using React component
 const createPizzaIcon = (style) => {
-  const color = style === "neapolitan" ? "#E63946" : "#DDA15E";
+  const svgString = ReactDOMServer.renderToStaticMarkup(
+    <PizzaPinElegant style={style} size={36} />
+  );
+  
   return L.divIcon({
-    className: "pizza-marker-wrapper",
-    html: `
-      <div class="pizza-marker ${style}" style="
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: ${color};
-        border: 3px solid white;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-        font-size: 18px;
-      ">
-        🍕
-      </div>
-    `,
-    iconSize: [40, 40],
-    iconAnchor: [20, 40],
-    popupAnchor: [0, -40],
+    className: "pizza-marker",
+    html: svgString,
+    iconSize: [36, 45],
+    iconAnchor: [18, 45],
+    popupAnchor: [0, -45],
   });
 };
 
@@ -156,16 +146,16 @@ const MapView = () => {
   return (
     <div className="relative h-screen w-full" data-testid="map-view">
       {/* Header */}
-      <header className="absolute top-0 left-0 right-0 z-30 bg-gradient-to-b from-cream via-cream/90 to-transparent pt-4 pb-8 px-4">
+      <header className="absolute top-0 left-0 right-0 z-30 bg-gradient-to-b from-cream via-cream/95 to-transparent pt-6 pb-12 px-4">
         <div className="max-w-7xl mx-auto">
-          <h1 className="font-serif text-2xl md:text-3xl font-bold text-ink">
+          <h1 className="font-heading text-3xl md:text-4xl font-bold text-ink uppercase tracking-tight">
             Only Great Pizza
           </h1>
-          <p className="font-hand text-lg text-terracotta -rotate-1">Paris Edition</p>
+          <p className="font-accent text-xl text-terracotta -rotate-2 mt-1">Paris Edition</p>
         </div>
 
         {/* Quick Filters */}
-        <div className="flex items-center gap-2 mt-4 overflow-x-auto pb-1 scrollbar-hide">
+        <div className="flex items-center gap-3 mt-5 overflow-x-auto pb-1 scrollbar-hide">
           {quickFilters.map(({ key, value, label, color }) => (
             <button
               key={`${key}-${value}`}
@@ -231,7 +221,7 @@ const MapView = () => {
         {/* Center on user */}
         <button
           onClick={centerOnUser}
-          className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-ink hover:bg-paper transition-colors"
+          className="w-12 h-12 bg-white border border-stone/30 flex items-center justify-center text-ink hover:border-brick transition-colors"
           data-testid="center-location-btn"
         >
           <Navigation size={20} />
@@ -240,7 +230,7 @@ const MapView = () => {
         {/* Surprise me button */}
         <button
           onClick={handleSurpriseMe}
-          className="w-14 h-14 bg-tomato rounded-full shadow-lg flex items-center justify-center text-white hover:bg-tomato-hover transition-all hover:scale-110"
+          className="w-14 h-14 bg-brick border-2 border-brick flex items-center justify-center text-white hover:bg-brick-hover transition-all"
           data-testid="surprise-me-btn"
         >
           <Sparkles size={24} />
@@ -248,9 +238,9 @@ const MapView = () => {
       </div>
 
       {/* Pizza count badge */}
-      <div className="absolute bottom-24 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-md z-30">
-        <span className="font-semibold text-ink">{pizzerias.length}</span>
-        <span className="text-stone ml-1">pizzerias</span>
+      <div className="absolute bottom-24 left-4 bg-white border border-stone/30 px-4 py-2 z-30">
+        <span className="font-heading uppercase tracking-wider text-ink">{pizzerias.length}</span>
+        <span className="text-stone ml-2 text-sm">pizzerias</span>
       </div>
 
       {/* Loading overlay */}
