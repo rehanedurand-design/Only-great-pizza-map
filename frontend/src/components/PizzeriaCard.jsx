@@ -81,12 +81,12 @@ const PizzeriaCard = ({ pizzeria, onFavoriteChange }) => {
       onClick={() => navigate(`/pizzeria/${pizzeria.id}`)}
       data-testid={`pizzeria-card-${pizzeria.id}`}
     >
-      {/* Image with grayscale hover effect */}
+      {/* Image */}
       <div className="relative aspect-[4/3] overflow-hidden">
         <img 
           src={pizzeria.photos?.main} 
           alt={pizzeria.name}
-          className="w-full h-full object-cover card-image-grayscale group-hover:scale-105 transition-all duration-500"
+          className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
           loading="lazy"
         />
         
