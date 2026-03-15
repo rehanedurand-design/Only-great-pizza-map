@@ -1751,6 +1751,199 @@ async def seed_data():
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Tripadvisor", "TheFork"],
             "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        # === LEFT BANK EXPANSION - EDITORIAL PICKS ===
+        {
+            "id": "pz-044",
+            "name": "Guillaume Grasso",
+            "address": "45 Rue Brancion, 75015 Paris",
+            "neighborhood": "Plaisance",
+            "latitude": 48.8337,
+            "longitude": 2.3063,
+            "google_rating": 4.6,
+            "review_count": 850,
+            "pizza_style": "neapolitan",
+            "description": "The only AVPN-certified pizzeria in Paris. Guillaume Grasso carries on a century of family tradition - his ancestors opened the legendary GORIZIA pizzeria in Naples in 1916. The certification guarantees authentic Neapolitan technique: San Marzano tomatoes, fior di latte, wood-fired at 485°C for 60-90 seconds. A wine bar next door offers Italian wines and charcuterie.",
+            "signature_pizzas": [
+                {"name": "Margherita AVPN", "description": "Certified Vera Pizza Napoletana - San Marzano DOP, fior di latte, fresh basil, EVOO", "price": 14}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200"
+            },
+            "badges": ["AVPN Certified", "Italian Owners", "Le Fooding Pick", "Century of Tradition"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
+            "recommended_by": ["Le Fooding", "Paris Secret"],
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        {
+            "id": "pz-045",
+            "name": "Bonvivant Pizza",
+            "address": "4 Rue des Écoles, 75005 Paris",
+            "neighborhood": "Quartier Latin",
+            "latitude": 48.8495,
+            "longitude": 2.3476,
+            "google_rating": 4.5,
+            "review_count": 420,
+            "pizza_style": "roman",
+            "description": "Chic Roman-style pizzeria in the Latin Quarter. Thin, crispy bases made with organic flour rested for three days, topped with organic Sicilian tomato sauce. The elegant interior features charred wood, alabaster tables, and a lightning-shaped mirror. Natural Italian wines by the glass pair perfectly with the seasonal pizzas.",
+            "signature_pizzas": [
+                {"name": "Coin du Feu", "description": "Fior di latte, Italian sausage, roasted squash - seasonal favorite", "price": 15}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200",
+                "interior": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200",
+                "chef": "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=1200"
+            },
+            "badges": ["Le Fooding Pick", "Roman Style", "Natural Wines", "Organic Ingredients"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
+            "recommended_by": ["Le Fooding"],
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        {
+            "id": "pz-046",
+            "name": "Marzo",
+            "address": "5 Rue Paul Louis Courier, 75007 Paris",
+            "neighborhood": "Rue du Bac",
+            "latitude": 48.8571,
+            "longitude": 2.3213,
+            "google_rating": 4.3,
+            "review_count": 680,
+            "pizza_style": "neapolitan",
+            "description": "An immaculate neighborhood pizzeria in the 7th run by Julien Cohen and Pascal Balland. The ceramic-tiled bar and Carrara marble tables set the scene for expertly topped wood-fired pizzas. A local favorite open Sundays and Mondays when many are closed. Book ahead - the intimate space fills quickly.",
+            "signature_pizzas": [
+                {"name": "Truffle Marzo", "description": "Black truffle cream, wild mushrooms, burrata, truffle oil", "price": 22}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200",
+                "interior": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200",
+                "chef": "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=1200"
+            },
+            "badges": ["Le Fooding Pick", "Gault&Millau", "Wood-Fired Oven", "Neighborhood Gem"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
+            "recommended_by": ["Le Fooding", "Gault & Millau"],
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        {
+            "id": "pz-047",
+            "name": "Anima",
+            "address": "78 Rue du Cherche-Midi, 75006 Paris",
+            "neighborhood": "Saint-Germain",
+            "latitude": 48.8459,
+            "longitude": 2.3212,
+            "google_rating": 4.2,
+            "review_count": 520,
+            "pizza_style": "neapolitan",
+            "description": "A beautifully restored former tapestry studio with original tiling, hardwood floors, and a commanding wood-fired oven. Run by David Lanher and Marco Marzilli with chef Matteo Testa. Petra flour dough rested 48 hours creates light, digestible crusts. The Calabra with n'duja and caciocavallo is unmissable.",
+            "signature_pizzas": [
+                {"name": "Calabra", "description": "Vesuvian tomatoes, fior di latte, n'duja, caciocavallo - spicy Calabrian heat", "price": 18}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=1200",
+                "interior": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200",
+                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1200"
+            },
+            "badges": ["Le Fooding Pick", "Gault&Millau", "Wood-Fired Oven", "48h Fermentation"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
+            "recommended_by": ["Le Fooding", "Gault & Millau", "Do It In Paris"],
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        {
+            "id": "pz-048",
+            "name": "Piennolo",
+            "address": "18 Rue Rosenwald, 75015 Paris",
+            "neighborhood": "Convention",
+            "latitude": 48.8367,
+            "longitude": 2.2961,
+            "google_rating": 4.8,
+            "review_count": 280,
+            "pizza_style": "neapolitan",
+            "description": "Named after the famous Piennolo tomatoes from Vesuvius, this intimate 15th arrondissement trattoria delivers authentic Neapolitan craft. Chef Jacopo D'Amico uses Molino Quaglia flour for impossibly light crusts. The brick-walled interior fills with the intoxicating aroma of the pizza oven. Rated 9.2/10 on TheFork with exceptional food scores.",
+            "signature_pizzas": [
+                {"name": "Piennolo", "description": "Piennolo tomatoes DOP, fior di latte, fresh basil, Vesuvian olive oil", "price": 16}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=1200",
+                "chef": "https://images.unsplash.com/photo-1542834369-f10ebf06d3e0?w=1200"
+            },
+            "badges": ["Top Rated Google", "Time Out Pick", "Italian Pizzaiolo", "TheFork 9.2"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
+            "recommended_by": ["Time Out", "TheFork"],
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        {
+            "id": "pz-049",
+            "name": "Il Forno Di Napoli",
+            "address": "162 Boulevard du Montparnasse, 75014 Paris",
+            "neighborhood": "Montparnasse",
+            "latitude": 48.8421,
+            "longitude": 2.3272,
+            "google_rating": 4.5,
+            "review_count": 1250,
+            "pizza_style": "neapolitan",
+            "description": "A beloved Montparnasse institution ranking in Paris's top 500 restaurants. Authentic Neapolitan pizzas emerge from the wood-fired oven with leopard-spotted crusts and quality toppings. The location near Luxembourg Gardens makes it perfect for a post-stroll pizza. One of the Left Bank's most reliable choices.",
+            "signature_pizzas": [
+                {"name": "Napoli DOC", "description": "Buffalo mozzarella DOP, anchovies, capers, oregano", "price": 17}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200"
+            },
+            "badges": ["Wood-Fired Oven", "Italian Pizzaiolo", "Tripadvisor Top 500", "Montparnasse Classic"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
+            "recommended_by": ["Tripadvisor"],
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        {
+            "id": "pz-050",
+            "name": "Papilla Soufflot",
+            "address": "9 Rue Soufflot, 75005 Paris",
+            "neighborhood": "Panthéon",
+            "latitude": 48.8470,
+            "longitude": 2.3434,
+            "google_rating": 4.6,
+            "review_count": 4600,
+            "pizza_style": "neapolitan",
+            "description": "A stunning location steps from the Panthéon with a sun-drenched terrace overlooking Rue Soufflot. The authentic Italian kitchen delivers artisanal pizzas alongside truffle pasta and handmade tiramisu. With over 4,600 reviews and a 9.2/10 rating, it's become the Latin Quarter's most talked-about Italian.",
+            "signature_pizzas": [
+                {"name": "Truffle Cream", "description": "Black truffle cream, porcini mushrooms, mozzarella, parmesan shavings", "price": 19}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200",
+                "interior": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200",
+                "chef": "https://images.unsplash.com/photo-1595475207225-428b62bda831?w=1200"
+            },
+            "badges": ["Travelers Choice 2024", "Italian Pizzaiolo", "Terrace", "Panthéon Views"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
+            "recommended_by": ["Tripadvisor", "TheFork"],
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        {
+            "id": "pz-051",
+            "name": "Pizza Viva",
+            "address": "11 Rue Berthollet, 75005 Paris",
+            "neighborhood": "Port-Royal",
+            "latitude": 48.8398,
+            "longitude": 2.3489,
+            "google_rating": 4.5,
+            "review_count": 120,
+            "pizza_style": "neapolitan",
+            "description": "Adriano Farano's pizzeria extension of his acclaimed Pane Vivo bakery. The innovation: 100% ancient wheat and natural sourdough for exceptional digestibility. Pizzas are served without cutlery on paper - finger-eating encouraged. A new addition to the 5th that's already earning devoted fans.",
+            "signature_pizzas": [
+                {"name": "Sourdough Margherita", "description": "Ancient wheat sourdough base, San Marzano, fior di latte, basil", "price": 14}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=1200",
+                "interior": "https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?w=1200",
+                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1200"
+            },
+            "badges": ["Sourdough Dough", "Ancient Wheat", "Artisan Baker", "Paris Bouge Pick"],
+            "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
+            "recommended_by": ["Sortir à Paris", "Paris Bouge"],
+            "created_at": datetime.now(timezone.utc).isoformat()
         }
     ]
     
