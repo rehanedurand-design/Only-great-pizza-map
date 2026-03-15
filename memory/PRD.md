@@ -59,22 +59,35 @@ Create a mobile and web application called "Only Great Pizza Map Paris" - a cura
 
 ## Latest Updates (March 15, 2026)
 
-### New Pizzerias Added (3)
-| Pizzeria | Arrondissement | Style | Rating | Editorial Sources |
-|----------|---------------|-------|--------|-------------------|
-| **Dalmata** | 2nd (Sentier) | Neapolitan | 4.6★ | Gault & Millau, Do It In Paris |
-| **L'Antica Pizzeria Da Michele** | 11th (Bastille) | Neapolitan | 4.5★ | New York Times ("Temple of Pizza") |
-| **Arrivederci Pizzeria** | 5th (Quartier Latin) | Neapolitan | 4.8★ | TheFork 9.4/10 |
+### Full Paris Coverage - All 20 Arrondissements ✓
+Added 8 new pizzerias to cover previously missing arrondissements:
 
-**Total: 54 pizzerias** (42 Neapolitan, 12 Roman)
+| Arrondissement | Pizzeria | Style | Rating |
+|----------------|----------|-------|--------|
+| 13th | Di Loretta | Roman | 4.5★ |
+| 13th | La Piccola Sicilia | Neapolitan | 4.6★ |
+| 16th | La Matta | Neapolitan | 4.8★ |
+| 16th | Sorella | Neapolitan | 4.5★ |
+| 17th | Sonata Pizzeria | Neapolitan | 4.7★ |
+| 17th | Gruppomimo | Neapolitan | 4.6★ |
+| 19th | Chez Arnaud | Neapolitan | 4.7★ |
+| 19th | La Place Italienne | Neapolitan | 4.5★ |
 
-### Map Styling Update
-- Map base now uses **grayscale/black & white tiles** for refined visual identity
-- Pizzeria pins remain colorful (brick red = Neapolitan, gold = Roman)
-- All markers, popups, and UI elements unaffected
+**Total: 62 pizzerias** across all 20 arrondissements
 
-### Left Bank Expansion (8 pizzerias added previously)
-Guillaume Grasso, Bonvivant, Marzo, Anima, Piennolo, Il Forno Di Napoli, Papilla Soufflot, Pizza Viva
+### New Features
+1. **"🏆 Critics' Pick" Filter** - Shows 32 pizzerias featured by Le Fooding, Gault & Millau, Michelin, Time Out, New York Times, Le Figaro
+2. **Contact Info on Detail Pages** - Website link, clickable phone, "Book a Table" button
+3. **Schema Updated** - Added `website`, `phone`, `reservation_url` fields
+
+### Map Styling
+- Grayscale/black & white base tiles for refined visual identity
+- Colorful pins (brick red = Neapolitan, gold = Roman) stand out against grayscale
+
+### Previous Updates
+- Dalmata, L'Antica Pizzeria Da Michele, Arrivederci added
+- Left Bank expansion (8 pizzerias)
+- Admin panel, JWT auth, PWA support
 
 ## Data Notes
 - Wait times are **SIMULATED** based on time of day and popularity
