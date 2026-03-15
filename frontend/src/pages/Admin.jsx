@@ -204,6 +204,7 @@ const Admin = () => {
               setShowForm(true);
             }}
             className="bg-brick hover:bg-brick-hover text-white"
+            data-testid="add-pizzeria-btn"
           >
             <Plus size={18} className="mr-2" />
             Add Pizzeria
