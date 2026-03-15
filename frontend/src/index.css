@@ -44,6 +44,19 @@ code {
     font-family: 'DM Sans', sans-serif;
 }
 
+/* Grayscale map tiles - elegant black & white style */
+.grayscale-map .leaflet-tile-pane {
+    filter: grayscale(100%) contrast(1.1) brightness(1.05);
+}
+
+/* Ensure markers and popups remain colorful */
+.grayscale-map .leaflet-marker-pane,
+.grayscale-map .leaflet-shadow-pane,
+.grayscale-map .leaflet-popup-pane,
+.grayscale-map .leaflet-overlay-pane {
+    filter: none;
+}
+
 .leaflet-popup-content-wrapper {
     border-radius: 0;
     padding: 0;
