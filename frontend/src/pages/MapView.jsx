@@ -188,13 +188,14 @@ const MapView = () => {
           <MapContainer
             center={mapCenter}
             zoom={13}
-            className="h-full w-full"
+            className="h-full w-full grayscale-map"
             ref={mapRef}
             zoomControl={false}
           >
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              className="grayscale-tiles"
             />
             
             <MapController center={mapCenter} userLocation={userLocation} />
