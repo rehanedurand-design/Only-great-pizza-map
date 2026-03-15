@@ -1140,7 +1140,7 @@ async def seed_data():
                 {"name": "Quattro Stagioni", "description": "Four sections: artichokes, mushrooms, ham, olives", "price": 16}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=1200",
+                "main": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=1200",
                 "interior": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200",
                 "chef": "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=1200"
             },
