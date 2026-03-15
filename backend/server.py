@@ -111,6 +111,7 @@ class PizzeriaResponse(BaseModel):
     website: Optional[str] = None
     phone: Optional[str] = None
     reservation_url: Optional[str] = None
+    opening_hours: Optional[dict] = None
     wait_time: Optional[dict] = None
     distance: Optional[float] = None
     user_rating_avg: Optional[float] = None
