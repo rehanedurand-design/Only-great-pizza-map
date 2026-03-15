@@ -751,6 +751,9 @@ async def seed_data():
             "badges": ["Best Margherita", "Italian Pizzaiolo", "Sourdough Dough"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Time Out", "Le Fooding"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -775,6 +778,9 @@ async def seed_data():
             "badges": ["Great Wine List", "Italian Owners", "Famous Tiramisu"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Le Bonbon", "Time Out"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -799,6 +805,9 @@ async def seed_data():
             "badges": ["Best Margherita", "Sourdough Dough", "Italian Pizzaiolo"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Le Fooding", "Paris Bouge"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -823,6 +832,9 @@ async def seed_data():
             "badges": ["Italian Pizzaiolo", "Great Wine List", "Sourdough Dough"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Time Out", "Le Fooding"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -847,6 +859,9 @@ async def seed_data():
             "badges": ["Best Margherita", "Great Wine List", "Famous Tiramisu"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Le Fooding", "Gault & Millau"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -871,6 +886,9 @@ async def seed_data():
             "badges": ["Italian Owners", "Italian Pizzaiolo", "Family Recipe"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Le Bonbon", "Paris Select"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -895,6 +913,9 @@ async def seed_data():
             "badges": ["Best Margherita", "Great Wine List", "Italian Pizzaiolo"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Gault & Millau", "Le Fooding"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -919,6 +940,9 @@ async def seed_data():
             "badges": ["Italian Owners", "Italian Pizzaiolo", "Family Recipe", "Sourdough Dough"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Le Bonbon", "Paris Bouge"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -943,6 +967,9 @@ async def seed_data():
             "badges": ["Italian Pizzaiolo", "Sourdough Dough", "Great Wine List"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Le Fooding"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -967,6 +994,9 @@ async def seed_data():
             "badges": ["Italian Pizzaiolo", "Sourdough Dough", "Great Wine List"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Time Out", "Le Bonbon"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -991,6 +1021,9 @@ async def seed_data():
             "badges": ["World Champion", "Best Margherita", "Italian Pizzaiolo"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Michelin", "Le Fooding", "Time Out"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1015,6 +1048,9 @@ async def seed_data():
             "badges": ["Great Wine List", "Italian Pizzaiolo", "Late Night"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Vogue Paris", "Le Fooding"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1039,6 +1075,9 @@ async def seed_data():
             "badges": ["Italian Pizzaiolo", "Great Wine List", "Famous Tiramisu", "Big Mamma Group"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Big Mamma", "Time Out"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1063,6 +1102,9 @@ async def seed_data():
             "badges": ["Chef's Table", "Seasonal Menu", "Italian Pizzaiolo"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Michelin", "Le Fooding"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1087,6 +1129,9 @@ async def seed_data():
             "badges": ["Local Favorite", "Italian Owners", "Family Recipe"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
             "recommended_by": ["Le Bonbon"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1111,6 +1156,9 @@ async def seed_data():
             "badges": ["AVPN Certified", "Italian Owners", "Best Margherita"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["AVPN", "Time Out"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1135,6 +1183,9 @@ async def seed_data():
             "badges": ["Local Secret", "Italian Owners", "Italian Pizzaiolo"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Paris Bouge"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1159,6 +1210,9 @@ async def seed_data():
             "badges": ["Italian Owners", "Terrace", "Family Recipe"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Le Bonbon"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1183,6 +1237,9 @@ async def seed_data():
             "badges": ["Italian Owners", "Best Marinara", "Sourdough Dough"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
             "recommended_by": ["Time Out"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1207,6 +1264,9 @@ async def seed_data():
             "badges": ["House-Milled Flour", "Italian Owners", "Sourdough Dough"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Paris Secret"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1231,6 +1291,9 @@ async def seed_data():
             "badges": ["Quick Service", "Italian Pizzaiolo", "Lunch Special"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": True, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
             "recommended_by": ["Time Out"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1255,6 +1318,9 @@ async def seed_data():
             "badges": ["Student Favorite", "Italian Owners", "Budget Friendly"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Le Bonbon"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1279,6 +1345,9 @@ async def seed_data():
             "badges": ["Local Secret", "Italian Grocery", "Italian Owners"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Paris Bouge"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1303,6 +1372,9 @@ async def seed_data():
             "badges": ["Historic", "Italian Owners", "Great Wine List"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Gault & Millau"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1327,6 +1399,9 @@ async def seed_data():
             "badges": ["Late Night", "Italian Pizzaiolo", "Terrace"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Le Bonbon"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         
@@ -1353,6 +1428,9 @@ async def seed_data():
             "badges": ["Italian Owners", "Gluten-Free Option", "Roman Style"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
             "recommended_by": ["Le Bonbon"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1377,6 +1455,9 @@ async def seed_data():
             "badges": ["Roman Style", "Sourdough Dough", "Seasonal Menu"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Time Out", "Le Fooding"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1401,6 +1482,9 @@ async def seed_data():
             "badges": ["Roman Style", "Italian Owners", "Gluten-Free Option"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Time Out", "Le Bonbon"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1425,6 +1509,9 @@ async def seed_data():
             "badges": ["Roman Style", "Creative Toppings", "Italian Pizzaiolo"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
             "recommended_by": ["Le Fooding", "Time Out"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1449,6 +1536,9 @@ async def seed_data():
             "badges": ["Roman Style", "Late Night", "Quick Service"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
             "recommended_by": ["Le Bonbon"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1473,6 +1563,9 @@ async def seed_data():
             "badges": ["Roman Style", "Bonci Method", "Sourdough Dough"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
             "recommended_by": ["Le Fooding"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1497,6 +1590,9 @@ async def seed_data():
             "badges": ["Roman Style", "Elegant", "Italian Owners"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Vogue Paris"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1521,6 +1617,9 @@ async def seed_data():
             "badges": ["Roman Style", "Dual Ovens", "Great Wine List"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Le Figaro"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1545,6 +1644,9 @@ async def seed_data():
             "badges": ["Roman Style", "Italian Owners", "Cozy Atmosphere"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Le Bonbon"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1569,6 +1671,9 @@ async def seed_data():
             "badges": ["Roman Style", "Bakery", "Perfect for Picnic"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": True},
             "recommended_by": ["Time Out"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1593,6 +1698,9 @@ async def seed_data():
             "badges": ["Roman Style", "Daily Specials", "Local Favorite"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Paris Bouge"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1617,6 +1725,9 @@ async def seed_data():
             "badges": ["Roman Style", "Creative Fusion", "Neighborhood Vibe"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": True, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Time Out"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1641,6 +1752,9 @@ async def seed_data():
             "badges": ["Roman Style", "Classic Pizza Bianca", "All Day"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
             "recommended_by": ["Le Bonbon"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1665,6 +1779,9 @@ async def seed_data():
             "badges": ["Roman Style", "Legendary Bakery", "Great Wine List"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Michelin", "Le Fooding", "Time Out"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1689,6 +1806,9 @@ async def seed_data():
             "badges": ["Roman Style", "Street Food", "Unique Concept"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
             "recommended_by": ["Time Out", "Le Fooding"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         # === USER-REQUESTED PIZZERIAS ===
@@ -1714,6 +1834,9 @@ async def seed_data():
             "badges": ["Wood-Fired Oven", "Italian Pizzaiolo", "Vegan Options"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Local Favorite"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1738,6 +1861,9 @@ async def seed_data():
             "badges": ["Italian Owners", "Italian Pizzaiolo", "Local Secret", "Terrace"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Tripadvisor"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1762,6 +1888,9 @@ async def seed_data():
             "badges": ["Top Rated Google", "Italian Pizzaiolo", "Wood-Fired Oven", "Travelers Choice"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Tripadvisor", "TheFork"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         # === LEFT BANK EXPANSION - EDITORIAL PICKS ===
@@ -1787,6 +1916,9 @@ async def seed_data():
             "badges": ["AVPN Certified", "Italian Owners", "Le Fooding Pick", "Century of Tradition"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Le Fooding", "Paris Secret"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1811,6 +1943,9 @@ async def seed_data():
             "badges": ["Le Fooding Pick", "Roman Style", "Natural Wines", "Organic Ingredients"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Le Fooding"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1835,6 +1970,9 @@ async def seed_data():
             "badges": ["Le Fooding Pick", "Gault&Millau", "Wood-Fired Oven", "Neighborhood Gem"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Le Fooding", "Gault & Millau"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1859,6 +1997,9 @@ async def seed_data():
             "badges": ["Le Fooding Pick", "Gault&Millau", "Wood-Fired Oven", "48h Fermentation"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Le Fooding", "Gault & Millau", "Do It In Paris"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1883,6 +2024,9 @@ async def seed_data():
             "badges": ["Top Rated Google", "Time Out Pick", "Italian Pizzaiolo", "TheFork 9.2"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Time Out", "TheFork"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1907,6 +2051,9 @@ async def seed_data():
             "badges": ["Wood-Fired Oven", "Italian Pizzaiolo", "Tripadvisor Top 500", "Montparnasse Classic"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Tripadvisor"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1931,6 +2078,9 @@ async def seed_data():
             "badges": ["Travelers Choice 2024", "Italian Pizzaiolo", "Terrace", "Panthéon Views"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Tripadvisor", "TheFork"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1955,6 +2105,9 @@ async def seed_data():
             "badges": ["Sourdough Dough", "Ancient Wheat", "Artisan Baker", "Paris Bouge Pick"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Sortir à Paris", "Paris Bouge"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         # === NEW ADDITIONS ===
@@ -1980,6 +2133,9 @@ async def seed_data():
             "badges": ["Gault & Millau", "Limited Edition", "Italian Pizzaiolo", "Do It In Paris Pick"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Gault & Millau", "Do It In Paris", "Paris Bouge"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -2004,6 +2160,9 @@ async def seed_data():
             "badges": ["Legendary Since 1870", "Italian Owners", "Naples Original", "NY Times Temple of Pizza"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
             "recommended_by": ["New York Times", "Sortir à Paris"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
