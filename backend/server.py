@@ -752,9 +752,9 @@ async def seed_data():
             "badges": ["Best Margherita", "Italian Pizzaiolo", "Sourdough Dough"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Time Out", "Le Fooding"],
-            "website": None,
-            "phone": None,
-            "reservation_url": None,
+            "website": "https://www.bigmammagroup.com/italian-restaurants/pizzeria-popolare-paris",
+            "phone": "+33 9 73 03 43 91",
+            "reservation_url": "https://www.sevenrooms.com/explore/pizzeriapopolarebourse",
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -779,9 +779,9 @@ async def seed_data():
             "badges": ["Great Wine List", "Italian Owners", "Famous Tiramisu"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Le Bonbon", "Time Out"],
-            "website": None,
-            "phone": None,
-            "reservation_url": None,
+            "website": "https://www.bigmammagroup.com/italian-restaurants/pink-mamma",
+            "phone": "+33 9 73 03 40 29",
+            "reservation_url": "https://www.sevenrooms.com/explore/pinkmamma",
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -806,9 +806,9 @@ async def seed_data():
             "badges": ["Best Margherita", "Sourdough Dough", "Italian Pizzaiolo"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Le Fooding", "Paris Bouge"],
-            "website": None,
-            "phone": None,
-            "reservation_url": None,
+            "website": "https://www.bigmammagroup.com/italian-restaurants/ober-mamma",
+            "phone": "+33 9 73 03 41 90",
+            "reservation_url": "https://www.sevenrooms.com/explore/obermamma",
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -833,9 +833,9 @@ async def seed_data():
             "badges": ["Italian Pizzaiolo", "Great Wine List", "Sourdough Dough"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Time Out", "Le Fooding"],
-            "website": None,
-            "phone": None,
-            "reservation_url": None,
+            "website": "https://www.bigmammagroup.com/italian-restaurants/mamma-primi",
+            "phone": "+33 9 73 03 41 93",
+            "reservation_url": "https://www.sevenrooms.com/explore/mammaprimiparis",
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -914,9 +914,9 @@ async def seed_data():
             "badges": ["Best Margherita", "Great Wine List", "Italian Pizzaiolo"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Gault & Millau", "Le Fooding"],
-            "website": None,
-            "phone": None,
-            "reservation_url": None,
+            "website": "https://www.pizzachic.fr",
+            "phone": "+33 1 45 48 30 38",
+            "reservation_url": "https://www.pizzachic.fr/en/address-contact/",
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -995,9 +995,9 @@ async def seed_data():
             "badges": ["Italian Pizzaiolo", "Sourdough Dough", "Great Wine List"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Time Out", "Le Bonbon"],
-            "website": None,
-            "phone": None,
-            "reservation_url": None,
+            "website": "https://www.bigmammagroup.com/italian-restaurants/east-mamma",
+            "phone": "+33 9 73 03 40 35",
+            "reservation_url": "https://www.sevenrooms.com/explore/eastmamma",
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1022,9 +1022,9 @@ async def seed_data():
             "badges": ["World Champion", "Best Margherita", "Italian Pizzaiolo"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Michelin", "Le Fooding", "Time Out"],
-            "website": None,
+            "website": "https://peppe.pizza",
             "phone": None,
-            "reservation_url": None,
+            "reservation_url": "https://peppe.pizza/contact/",
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1076,9 +1076,9 @@ async def seed_data():
             "badges": ["Italian Pizzaiolo", "Great Wine List", "Famous Tiramisu", "Big Mamma Group"],
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": True, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Big Mamma", "Time Out"],
-            "website": None,
-            "phone": None,
-            "reservation_url": None,
+            "website": "https://www.bigmammagroup.com/italian-restaurants/libertino",
+            "phone": "+33 9 73 03 35 56",
+            "reservation_url": "https://www.sevenrooms.com/explore/libertinoparis",
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1917,9 +1917,9 @@ async def seed_data():
             "badges": ["AVPN Certified", "Italian Owners", "Le Fooding Pick", "Century of Tradition"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Le Fooding", "Paris Secret"],
-            "website": None,
-            "phone": None,
-            "reservation_url": None,
+            "website": "https://www.guillaume-grasso.com",
+            "phone": "+33 1 45 33 83 83",
+            "reservation_url": "https://www.guillaume-grasso.com/en/guillaume-grasso-en/",
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1998,9 +1998,9 @@ async def seed_data():
             "badges": ["Le Fooding Pick", "Gault&Millau", "Wood-Fired Oven", "48h Fermentation"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Le Fooding", "Gault & Millau", "Do It In Paris"],
-            "website": None,
-            "phone": None,
-            "reservation_url": None,
+            "website": "https://www.anima.paris",
+            "phone": "+33 1 40 47 90 41",
+            "reservation_url": "https://www.anima.paris",
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -2134,9 +2134,9 @@ async def seed_data():
             "badges": ["Gault & Millau", "Limited Edition", "Italian Pizzaiolo", "Do It In Paris Pick"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["Gault & Millau", "Do It In Paris", "Paris Bouge"],
-            "website": None,
-            "phone": None,
-            "reservation_url": None,
+            "website": "https://www.gruppodalmata.com",
+            "phone": "+33 7 56 79 93 79",
+            "reservation_url": "https://www.thefork.com/restaurant/dalmata-r846404",
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -2161,8 +2161,8 @@ async def seed_data():
             "badges": ["Legendary Since 1870", "Italian Owners", "Naples Original", "NY Times Temple of Pizza"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
             "recommended_by": ["New York Times", "Sortir à Paris"],
-            "website": None,
-            "phone": None,
+            "website": "https://www.damicheleparis.com",
+            "phone": "+33 1 45 85 02 39",
             "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         },
