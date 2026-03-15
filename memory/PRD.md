@@ -59,33 +59,22 @@ Create a mobile and web application called "Only Great Pizza Map Paris" - a cura
 
 ## Latest Updates (March 15, 2026)
 
-### Left Bank Expansion - Editorial-First Curation
-Added 8 new editorially-recognized pizzerias focusing on the Left Bank:
+### New Pizzerias Added (3)
+| Pizzeria | Arrondissement | Style | Rating | Editorial Sources |
+|----------|---------------|-------|--------|-------------------|
+| **Dalmata** | 2nd (Sentier) | Neapolitan | 4.6★ | Gault & Millau, Do It In Paris |
+| **L'Antica Pizzeria Da Michele** | 11th (Bastille) | Neapolitan | 4.5★ | New York Times ("Temple of Pizza") |
+| **Arrivederci Pizzeria** | 5th (Quartier Latin) | Neapolitan | 4.8★ | TheFork 9.4/10 |
 
-| Pizzeria | Arr. | Style | Rating | Editorial Sources |
-|----------|------|-------|--------|-------------------|
-| Guillaume Grasso | 15th | Neapolitan | 4.6★ | Le Fooding, Paris Secret |
-| Bonvivant Pizza | 5th | Roman | 4.5★ | Le Fooding |
-| Marzo | 7th | Neapolitan | 4.3★ | Le Fooding, Gault & Millau |
-| Anima | 6th | Neapolitan | 4.2★ | Le Fooding, Gault & Millau, Do It In Paris |
-| Piennolo | 15th | Neapolitan | 4.8★ | Time Out, TheFork |
-| Il Forno Di Napoli | 14th | Neapolitan | 4.5★ | Tripadvisor Top 500 |
-| Papilla Soufflot | 5th | Neapolitan | 4.6★ | Tripadvisor, TheFork |
-| Pizza Viva | 5th | Neapolitan | 4.5★ | Sortir à Paris, Paris Bouge |
+**Total: 54 pizzerias** (42 Neapolitan, 12 Roman)
 
-**Total pizzerias: 51** (up from 43)
-**Left Bank coverage: 14 pizzerias** (up from 6)
+### Map Styling Update
+- Map base now uses **grayscale/black & white tiles** for refined visual identity
+- Pizzeria pins remain colorful (brick red = Neapolitan, gold = Roman)
+- All markers, popups, and UI elements unaffected
 
-### Selection Criteria Used:
-- Primary: Editorial recognition (Le Fooding, Gault & Millau, Time Out, Michelin mentions)
-- Secondary: Google rating (not used as exclusion criterion)
-- Verified: All entries have documented editorial sources
-
-### Admin Panel Testing Complete ✓
-All CRUD operations verified working (100% pass rate)
-
-### Bug Fixes
-- Fixed La Piazzetta and East Mamma burger image issue
+### Left Bank Expansion (8 pizzerias added previously)
+Guillaume Grasso, Bonvivant, Marzo, Anima, Piennolo, Il Forno Di Napoli, Papilla Soufflot, Pizza Viva
 
 ## Data Notes
 - Wait times are **SIMULATED** based on time of day and popularity
