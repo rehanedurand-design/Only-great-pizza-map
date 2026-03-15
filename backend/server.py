@@ -755,6 +755,7 @@ async def seed_data():
             "website": "https://www.bigmammagroup.com/italian-restaurants/pizzeria-popolare-paris",
             "phone": "+33 9 73 03 43 91",
             "reservation_url": "https://www.sevenrooms.com/explore/pizzeriapopolarebourse",
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -782,6 +783,7 @@ async def seed_data():
             "website": "https://www.bigmammagroup.com/italian-restaurants/pink-mamma",
             "phone": "+33 9 73 03 40 29",
             "reservation_url": "https://www.sevenrooms.com/explore/pinkmamma",
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -809,6 +811,7 @@ async def seed_data():
             "website": "https://www.bigmammagroup.com/italian-restaurants/ober-mamma",
             "phone": "+33 9 73 03 41 90",
             "reservation_url": "https://www.sevenrooms.com/explore/obermamma",
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -836,6 +839,7 @@ async def seed_data():
             "website": "https://www.bigmammagroup.com/italian-restaurants/mamma-primi",
             "phone": "+33 9 73 03 41 93",
             "reservation_url": "https://www.sevenrooms.com/explore/mammaprimiparis",
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -863,6 +867,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -890,6 +895,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -917,6 +923,7 @@ async def seed_data():
             "website": "https://www.pizzachic.fr",
             "phone": "+33 1 45 48 30 38",
             "reservation_url": "https://www.pizzachic.fr/en/address-contact/",
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -944,6 +951,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -971,6 +979,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -998,6 +1007,7 @@ async def seed_data():
             "website": "https://www.bigmammagroup.com/italian-restaurants/east-mamma",
             "phone": "+33 9 73 03 40 35",
             "reservation_url": "https://www.sevenrooms.com/explore/eastmamma",
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1025,6 +1035,7 @@ async def seed_data():
             "website": "https://peppe.pizza",
             "phone": None,
             "reservation_url": "https://peppe.pizza/contact/",
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1052,6 +1063,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1079,6 +1091,7 @@ async def seed_data():
             "website": "https://www.bigmammagroup.com/italian-restaurants/libertino",
             "phone": "+33 9 73 03 35 56",
             "reservation_url": "https://www.sevenrooms.com/explore/libertinoparis",
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1106,6 +1119,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1133,6 +1147,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1160,6 +1175,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1187,6 +1203,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1214,6 +1231,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1241,6 +1259,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1268,6 +1287,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1295,6 +1315,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1322,6 +1343,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1349,6 +1371,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1376,6 +1399,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1403,6 +1427,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         
@@ -1432,6 +1457,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1459,6 +1485,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1486,6 +1513,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1513,6 +1541,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1540,6 +1569,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1567,6 +1597,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1594,6 +1625,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1621,6 +1653,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1648,6 +1681,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1675,6 +1709,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1702,6 +1737,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1729,6 +1765,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1756,6 +1793,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1783,6 +1821,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1810,6 +1849,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         # === USER-REQUESTED PIZZERIAS ===
@@ -1838,6 +1878,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1865,6 +1906,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1892,6 +1934,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         # === LEFT BANK EXPANSION - EDITORIAL PICKS ===
@@ -1920,6 +1963,7 @@ async def seed_data():
             "website": "https://www.guillaume-grasso.com",
             "phone": "+33 1 45 33 83 83",
             "reservation_url": "https://www.guillaume-grasso.com/en/guillaume-grasso-en/",
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1947,6 +1991,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -1974,6 +2019,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -2001,6 +2047,7 @@ async def seed_data():
             "website": "https://www.anima.paris",
             "phone": "+33 1 40 47 90 41",
             "reservation_url": "https://www.anima.paris",
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -2028,6 +2075,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -2055,6 +2103,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -2082,6 +2131,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -2109,6 +2159,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         # === NEW ADDITIONS ===
@@ -2137,6 +2188,7 @@ async def seed_data():
             "website": "https://www.gruppodalmata.com",
             "phone": "+33 7 56 79 93 79",
             "reservation_url": "https://www.thefork.com/restaurant/dalmata-r846404",
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -2164,6 +2216,7 @@ async def seed_data():
             "website": "https://www.damicheleparis.com",
             "phone": "+33 1 45 85 02 39",
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -2191,6 +2244,7 @@ async def seed_data():
             "website": "https://www.thefork.com/restaurant/arrivederci-pizzeria-r323083",
             "phone": None,
             "reservation_url": "https://www.thefork.com/restaurant/arrivederci-pizzeria-r323083",
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         # === 13TH ARRONDISSEMENT ===
@@ -2219,6 +2273,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -2246,6 +2301,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         # === 16TH ARRONDISSEMENT ===
@@ -2274,6 +2330,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": "https://www.thefork.com/restaurant/la-matta-r123456",
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -2301,6 +2358,7 @@ async def seed_data():
             "website": "https://www.restaurantsorella.paris",
             "phone": None,
             "reservation_url": "https://www.thefork.com/restaurant/sorella-r123457",
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         # === 17TH ARRONDISSEMENT ===
@@ -2329,6 +2387,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -2356,6 +2415,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         # === 19TH ARRONDISSEMENT ===
@@ -2384,6 +2444,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         },
         {
@@ -2411,6 +2472,7 @@ async def seed_data():
             "website": None,
             "phone": None,
             "reservation_url": None,
+            "opening_hours": {"lunch": "12:00-14:30", "dinner": "19:00-22:30"},
             "created_at": datetime.now(timezone.utc).isoformat()
         }
     ]
