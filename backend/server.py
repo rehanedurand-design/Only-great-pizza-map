@@ -1944,6 +1944,79 @@ async def seed_data():
             "filters": {"sourdough": True, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
             "recommended_by": ["Sortir à Paris", "Paris Bouge"],
             "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        # === NEW ADDITIONS ===
+        {
+            "id": "pz-052",
+            "name": "Dalmata",
+            "address": "8 Rue Tiquetonne, 75002 Paris",
+            "neighborhood": "Sentier",
+            "latitude": 48.8642,
+            "longitude": 2.3487,
+            "google_rating": 4.6,
+            "review_count": 890,
+            "pizza_style": "neapolitan",
+            "description": "A cult Neapolitan pizzeria with a limited-edition philosophy - only 101 pizzas per service to guarantee quality. The industrial-chic space channels 90s New York delis with neon signs and white tiles. Gault & Millau recommended. The carbonara pizza is legendary, and the tiramisu is not to be missed.",
+            "signature_pizzas": [
+                {"name": "Carbonara", "description": "Guanciale, pecorino cream, egg yolk, black pepper - the Roman classic on pizza", "price": 17}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200"
+            },
+            "badges": ["Gault & Millau", "Limited Edition", "Italian Pizzaiolo", "Do It In Paris Pick"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
+            "recommended_by": ["Gault & Millau", "Do It In Paris", "Paris Bouge"],
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        {
+            "id": "pz-053",
+            "name": "L'Antica Pizzeria Da Michele",
+            "address": "19 Rue du Faubourg Saint-Antoine, 75011 Paris",
+            "neighborhood": "Bastille",
+            "latitude": 48.8527,
+            "longitude": 2.3705,
+            "google_rating": 4.5,
+            "review_count": 320,
+            "pizza_style": "neapolitan",
+            "description": "The legendary Naples institution arrives in Paris. Founded in 1870, Da Michele is called 'The Temple of Pizza' by the New York Times. Only two pizzas on the menu - Margherita and Marinara - made with ingredients from Naples and Campania. Simple, authentic, unforgettable. The Paris location opened September 2025 at Bastille.",
+            "signature_pizzas": [
+                {"name": "Margherita", "description": "The iconic original - San Marzano, fior di latte, fresh basil, EVOO", "price": 12}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200",
+                "interior": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200",
+                "chef": "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=1200"
+            },
+            "badges": ["Legendary Since 1870", "Italian Owners", "Naples Original", "NY Times Temple of Pizza"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": False, "famous_tiramisu": False},
+            "recommended_by": ["New York Times", "Sortir à Paris"],
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        {
+            "id": "pz-054",
+            "name": "Arrivederci Pizzeria",
+            "address": "47 Rue Gay-Lussac, 75005 Paris",
+            "neighborhood": "Quartier Latin",
+            "latitude": 48.8442,
+            "longitude": 2.3437,
+            "google_rating": 4.8,
+            "review_count": 7718,
+            "pizza_style": "neapolitan",
+            "description": "A Latin Quarter phenomenon with a staggering 9.4/10 rating on TheFork from nearly 8,000 reviews. Thin crusts, fresh ingredients, generous toppings, and prices that won't break the bank. The warm, family-run atmosphere and sun-drenched terrace make it a neighborhood institution beloved by students and locals alike.",
+            "signature_pizzas": [
+                {"name": "Quattro Formaggi", "description": "Mozzarella, gorgonzola, parmesan, goat cheese - rich and indulgent", "price": 15}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=1200",
+                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1200"
+            },
+            "badges": ["Top Rated Google", "TheFork 9.4", "Italian Pizzaiolo", "Terrace", "Best Value"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
+            "recommended_by": ["TheFork", "Tripadvisor"],
+            "created_at": datetime.now(timezone.utc).isoformat()
         }
     ]
     
