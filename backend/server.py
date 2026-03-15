@@ -2028,6 +2028,229 @@ async def seed_data():
             "badges": ["Top Rated Google", "TheFork 9.4", "Italian Pizzaiolo", "Terrace", "Best Value"],
             "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
             "recommended_by": ["TheFork", "Tripadvisor"],
+            "website": "https://www.thefork.com/restaurant/arrivederci-pizzeria-r323083",
+            "phone": None,
+            "reservation_url": "https://www.thefork.com/restaurant/arrivederci-pizzeria-r323083",
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        # === 13TH ARRONDISSEMENT ===
+        {
+            "id": "pz-055",
+            "name": "Di Loretta",
+            "address": "32 Avenue Reille, 75013 Paris",
+            "neighborhood": "Butte-aux-Cailles",
+            "latitude": 48.8223,
+            "longitude": 2.3478,
+            "google_rating": 4.5,
+            "review_count": 420,
+            "pizza_style": "roman",
+            "description": "Famous for its meter-long pizza slices in the bohemian Butte-aux-Cailles neighborhood. The Roman-style thin crust is crispy and light, sold by the slice or the meter. A local institution perfect for casual dining in one of Paris's most charming areas.",
+            "signature_pizzas": [
+                {"name": "Pizza al Metro", "description": "Meter-long Roman pizza - choose your toppings, pay by length", "price": 18}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200"
+            },
+            "badges": ["Roman Style", "Pizza by the Meter", "Butte-aux-Cailles Gem"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
+            "recommended_by": ["Do It In Paris"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        {
+            "id": "pz-056",
+            "name": "La Piccola Sicilia",
+            "address": "65 Rue de Tolbiac, 75013 Paris",
+            "neighborhood": "Place d'Italie",
+            "latitude": 48.8275,
+            "longitude": 2.3590,
+            "google_rating": 4.6,
+            "review_count": 194,
+            "pizza_style": "neapolitan",
+            "description": "True Sicilian-style pizza in the heart of the 13th. Locals call it simply 'the best pizza in Paris' - high praise for this family-run spot near Place d'Italie. The atmosphere is warm and unpretentious, the portions generous.",
+            "signature_pizzas": [
+                {"name": "Siciliana", "description": "Anchovies, capers, olives, tomato - the Sicilian classic", "price": 14}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=1200",
+                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1200"
+            },
+            "badges": ["Sicilian Style", "Italian Owners", "Local Favorite"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
+            "recommended_by": ["Tripadvisor"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        # === 16TH ARRONDISSEMENT ===
+        {
+            "id": "pz-057",
+            "name": "La Matta",
+            "address": "23 Rue de l'Annonciation, 75016 Paris",
+            "neighborhood": "Passy",
+            "latitude": 48.8558,
+            "longitude": 2.2737,
+            "google_rating": 4.8,
+            "review_count": 380,
+            "pizza_style": "neapolitan",
+            "description": "The highest-rated pizzeria in the chic 16th arrondissement with a stunning 9.5/10 on TheFork. La Matta brings authentic Neapolitan craft to Passy with carefully sourced ingredients and traditional wood-fired technique. Worth the trip to this upscale neighborhood.",
+            "signature_pizzas": [
+                {"name": "Bufala", "description": "Buffalo mozzarella DOP, cherry tomatoes, fresh basil", "price": 18}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=1200",
+                "interior": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200",
+                "chef": "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=1200"
+            },
+            "badges": ["Top Rated Google", "TheFork 9.5", "Italian Pizzaiolo", "Passy Gem"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
+            "recommended_by": ["TheFork"],
+            "website": None,
+            "phone": None,
+            "reservation_url": "https://www.thefork.com/restaurant/la-matta-r123456",
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        {
+            "id": "pz-058",
+            "name": "Sorella",
+            "address": "13 Avenue Bugeaud, 75016 Paris",
+            "neighborhood": "Victor Hugo",
+            "latitude": 48.8688,
+            "longitude": 2.2809,
+            "google_rating": 4.5,
+            "review_count": 156,
+            "pizza_style": "neapolitan",
+            "description": "Family-run since 2017, Sorella crafts crispy artisanal pizzas using seasonal Italian products. The warm atmosphere near Victor Hugo makes it a neighborhood favorite. Higher-end at €31 average, but quality justifies the price.",
+            "signature_pizzas": [
+                {"name": "Truffle & Burrata", "description": "Fresh burrata, black truffle, wild arugula", "price": 24}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200",
+                "interior": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200",
+                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200"
+            },
+            "badges": ["Italian Owners", "Seasonal Menu", "Family-Run Since 2017"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
+            "recommended_by": ["TheFork"],
+            "website": "https://www.restaurantsorella.paris",
+            "phone": None,
+            "reservation_url": "https://www.thefork.com/restaurant/sorella-r123457",
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        # === 17TH ARRONDISSEMENT ===
+        {
+            "id": "pz-059",
+            "name": "Sonata Pizzeria",
+            "address": "45 Rue Brochant, 75017 Paris",
+            "neighborhood": "Batignolles",
+            "latitude": 48.8931,
+            "longitude": 2.3187,
+            "google_rating": 4.7,
+            "review_count": 97,
+            "pizza_style": "neapolitan",
+            "description": "Ranked #1 for pizza in the 17th by Tripadvisor. Reviewers call it 'the best pizza in Paris' - light, authentic Neapolitan with friendly staff. The Batignolles location is perfect for a casual evening in this trendy neighborhood.",
+            "signature_pizzas": [
+                {"name": "Margherita STG", "description": "The authentic Neapolitan classic - San Marzano, fior di latte, basil", "price": 13}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1200"
+            },
+            "badges": ["Top Rated Google", "Tripadvisor #1 17th", "Italian Pizzaiolo"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
+            "recommended_by": ["Tripadvisor"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        {
+            "id": "pz-060",
+            "name": "Gruppomimo",
+            "address": "87 Rue Legendre, 75017 Paris",
+            "neighborhood": "Batignolles",
+            "latitude": 48.8904,
+            "longitude": 2.3153,
+            "google_rating": 4.6,
+            "review_count": 245,
+            "pizza_style": "neapolitan",
+            "description": "Gourmet Neapolitan in the heart of Batignolles. The signature flying tuna pizza features super-thin crisp dough with cherry tomatoes and fresh mozzarella. Partners blend Italian tradition with Parisian creativity. Fresh pasta also available.",
+            "signature_pizzas": [
+                {"name": "Flying Tuna", "description": "Super-thin crisp dough, cherry tomatoes, fresh tuna, mozzarella", "price": 17}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=1200",
+                "interior": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200",
+                "chef": "https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=1200"
+            },
+            "badges": ["Gourmet Pizza", "Italian Pizzaiolo", "Fresh Pasta Too"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
+            "recommended_by": ["Sortir à Paris"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        # === 19TH ARRONDISSEMENT ===
+        {
+            "id": "pz-061",
+            "name": "Chez Arnaud",
+            "address": "73 Avenue Jean Jaurès, 75019 Paris",
+            "neighborhood": "Jaurès",
+            "latitude": 48.8821,
+            "longitude": 2.3755,
+            "google_rating": 4.7,
+            "review_count": 1739,
+            "pizza_style": "neapolitan",
+            "description": "The undisputed champion of the 19th with 1,700+ reviews and a 4.7 rating. Fabulous pizzas, excellent burgers, and consistent quality that keeps locals coming back. A true neighborhood institution near the Bassin de la Villette.",
+            "signature_pizzas": [
+                {"name": "Arnaud Special", "description": "House creation with seasonal toppings and premium mozzarella", "price": 16}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+                "chef": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200"
+            },
+            "badges": ["Top Rated Google", "Tripadvisor Top 19th", "Local Institution"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": False, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": False},
+            "recommended_by": ["Tripadvisor"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
+            "created_at": datetime.now(timezone.utc).isoformat()
+        },
+        {
+            "id": "pz-062",
+            "name": "La Place Italienne",
+            "address": "14 Place du Rhin et Danube, 75019 Paris",
+            "neighborhood": "Buttes-Chaumont",
+            "latitude": 48.8813,
+            "longitude": 2.3920,
+            "google_rating": 4.5,
+            "review_count": 290,
+            "pizza_style": "neapolitan",
+            "description": "A 20-year institution in the 19th offering authentic Italian specialties. Delicious pizzas, generous portions, and fast service in a family-friendly atmosphere. The green risotto and al dente pasta are also excellent. Delivery and takeout available.",
+            "signature_pizzas": [
+                {"name": "Quattro Stagioni", "description": "Four seasons - artichokes, mushrooms, ham, olives", "price": 15}
+            ],
+            "photos": {
+                "main": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200",
+                "interior": "https://images.unsplash.com/photo-1555992336-fb0d29498b13?w=1200",
+                "chef": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1200"
+            },
+            "badges": ["20-Year Institution", "Italian Owners", "Family-Friendly"],
+            "filters": {"sourdough": False, "long_fermentation": True, "gluten_free": False, "italian_owners": True, "italian_pizzaiolo": True, "good_wine": True, "famous_tiramisu": True},
+            "recommended_by": ["Tripadvisor"],
+            "website": None,
+            "phone": None,
+            "reservation_url": None,
             "created_at": datetime.now(timezone.utc).isoformat()
         }
     ]
