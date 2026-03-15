@@ -377,6 +377,9 @@ class PizzeriaCreate(BaseModel):
     good_wine: bool = False
     famous_tiramisu: bool = False
     recommended_by: List[str] = []
+    website: Optional[str] = None
+    phone: Optional[str] = None
+    reservation_url: Optional[str] = None
 
 @api_router.post("/pizzerias", response_model=PizzeriaResponse)
 async def create_pizzeria(data: PizzeriaCreate):
