@@ -59,35 +59,33 @@ Create a mobile and web application called "Only Great Pizza Map Paris" - a cura
 
 ## Latest Updates (March 15, 2026)
 
+### Contact Data Backfilled ✓
+- **12 pizzerias** with verified phone numbers
+- **14 pizzerias** with official websites
+- **14 pizzerias** with online reservation links
+- **62 pizzerias** with opening hours
+
+Key pizzerias with full contact info:
+- All Big Mamma restaurants (Pizzeria Popolare, Pink Mamma, Ober Mamma, East Mamma, Mama Primi, Libertino)
+- Guillaume Grasso, Dalmata, L'Antica Pizzeria Da Michele, Pizza Chic, Anima, Peppe
+
+### Opening Hours Added ✓
+New field `opening_hours` with lunch/dinner times displayed on detail pages
+
 ### Full Paris Coverage - All 20 Arrondissements ✓
-Added 8 new pizzerias to cover previously missing arrondissements:
+Total: **62 pizzerias** across all arrondissements:
+- 1st-4th: 7 pizzerias
+- 5th-8th: 12 pizzerias (strong Left Bank coverage)
+- 9th-12th: 17 pizzerias
+- 13th-16th: 6 pizzerias
+- 17th-20th: 20 pizzerias
 
-| Arrondissement | Pizzeria | Style | Rating |
-|----------------|----------|-------|--------|
-| 13th | Di Loretta | Roman | 4.5★ |
-| 13th | La Piccola Sicilia | Neapolitan | 4.6★ |
-| 16th | La Matta | Neapolitan | 4.8★ |
-| 16th | Sorella | Neapolitan | 4.5★ |
-| 17th | Sonata Pizzeria | Neapolitan | 4.7★ |
-| 17th | Gruppomimo | Neapolitan | 4.6★ |
-| 19th | Chez Arnaud | Neapolitan | 4.7★ |
-| 19th | La Place Italienne | Neapolitan | 4.5★ |
-
-**Total: 62 pizzerias** across all 20 arrondissements
-
-### New Features
-1. **"🏆 Critics' Pick" Filter** - Shows 32 pizzerias featured by Le Fooding, Gault & Millau, Michelin, Time Out, New York Times, Le Figaro
-2. **Contact Info on Detail Pages** - Website link, clickable phone, "Book a Table" button
-3. **Schema Updated** - Added `website`, `phone`, `reservation_url` fields
-
-### Map Styling
-- Grayscale/black & white base tiles for refined visual identity
-- Colorful pins (brick red = Neapolitan, gold = Roman) stand out against grayscale
-
-### Previous Updates
-- Dalmata, L'Antica Pizzeria Da Michele, Arrivederci added
-- Left Bank expansion (8 pizzerias)
-- Admin panel, JWT auth, PWA support
+### Features Complete
+1. **"🏆 Critics' Pick" Filter** - 32 pizzerias from Le Fooding, Gault & Millau, Michelin, Time Out, NY Times
+2. **Contact Info UI** - Phone link, website link, "Book a Table" button, opening hours
+3. **Grayscale Map** - Elegant black & white tiles with colorful pins
+4. **Admin Panel** - Full CRUD operations at /admin
+5. **PWA Support** - Offline access, Add to Home Screen
 
 ## Data Notes
 - Wait times are **SIMULATED** based on time of day and popularity
