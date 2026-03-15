@@ -220,6 +220,7 @@ const Admin = () => {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="pl-10 bg-cream border-stone/30"
+            data-testid="search-input"
           />
         </div>
       </header>
