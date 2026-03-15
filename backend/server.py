@@ -948,7 +948,7 @@ async def seed_data():
                 {"name": "Pistacchio e Mortadella", "description": "Pistachio cream, silky mortadella, stracciatella, crushed pistachios", "price": 16}
             ],
             "photos": {
-                "main": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=1200",
+                "main": "https://images.unsplash.com/photo-1564936281291-294551497d81?w=1200",
                 "interior": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200",
                 "chef": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1200"
             },
