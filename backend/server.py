@@ -108,6 +108,9 @@ class PizzeriaResponse(BaseModel):
     badges: List[str]
     filters: dict
     recommended_by: List[str]
+    website: Optional[str] = None
+    phone: Optional[str] = None
+    reservation_url: Optional[str] = None
     wait_time: Optional[dict] = None
     distance: Optional[float] = None
     user_rating_avg: Optional[float] = None
