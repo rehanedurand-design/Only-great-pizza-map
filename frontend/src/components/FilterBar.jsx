@@ -11,6 +11,7 @@ const FilterBar = ({ filters, onFilterChange }) => {
       filters: [
         { key: "style", value: "neapolitan", label: "Neapolitan" },
         { key: "style", value: "roman", label: "Roman" },
+        { key: "featured_by_critics", value: true, label: "🏆 Critics' Pick" },
       ]
     },
     {
