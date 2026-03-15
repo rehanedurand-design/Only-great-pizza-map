@@ -418,6 +418,60 @@ const PizzeriaDetail = () => {
               )}
             </div>
           )}
+
+          {/* Opening Hours */}
+          {pizzeria.opening_hours && (
+            <div className="mt-4 pt-4 border-t border-stone/10">
+              <div className="flex items-center gap-2 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-olive"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span className="font-heading uppercase tracking-wider text-sm text-stone">Opening Hours</span>
+              </div>
+              <div className="grid grid-cols-2 gap-2 text-sm">
+                {pizzeria.opening_hours.lunch && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-stone">Lunch:</span>
+                    <span className="text-ink font-medium">{pizzeria.opening_hours.lunch}</span>
+                  </div>
+                )}
+                {pizzeria.opening_hours.dinner && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-stone">Dinner:</span>
+                    <span className="text-ink font-medium">{pizzeria.opening_hours.dinner}</span>
+                  </div>
+                )}
+                {pizzeria.opening_hours.daily && (
+                  <div className="col-span-2 flex items-center gap-2">
+                    <span className="text-stone">Daily:</span>
+                    <span className="text-ink font-medium">{pizzeria.opening_hours.daily}</span>
+                  </div>
+                )}
+                {pizzeria.opening_hours.mon_fri && (
+                  <div className="col-span-2 flex items-center gap-2">
+                    <span className="text-stone">Mon-Fri:</span>
+                    <span className="text-ink font-medium">{pizzeria.opening_hours.mon_fri}</span>
+                  </div>
+                )}
+                {pizzeria.opening_hours.mon_sat && (
+                  <div className="col-span-2 flex items-center gap-2">
+                    <span className="text-stone">Mon-Sat:</span>
+                    <span className="text-ink font-medium">{pizzeria.opening_hours.mon_sat}</span>
+                  </div>
+                )}
+                {pizzeria.opening_hours.sat && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-stone">Sat:</span>
+                    <span className="text-ink font-medium">{pizzeria.opening_hours.sat}</span>
+                  </div>
+                )}
+                {pizzeria.opening_hours.sun && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-stone">Sun:</span>
+                    <span className="text-ink font-medium">{pizzeria.opening_hours.sun}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Actions */}
