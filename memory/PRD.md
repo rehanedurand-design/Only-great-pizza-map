@@ -59,22 +59,33 @@ Create a mobile and web application called "Only Great Pizza Map Paris" - a cura
 
 ## Latest Updates (March 15, 2026)
 
+### Left Bank Expansion - Editorial-First Curation
+Added 8 new editorially-recognized pizzerias focusing on the Left Bank:
+
+| Pizzeria | Arr. | Style | Rating | Editorial Sources |
+|----------|------|-------|--------|-------------------|
+| Guillaume Grasso | 15th | Neapolitan | 4.6★ | Le Fooding, Paris Secret |
+| Bonvivant Pizza | 5th | Roman | 4.5★ | Le Fooding |
+| Marzo | 7th | Neapolitan | 4.3★ | Le Fooding, Gault & Millau |
+| Anima | 6th | Neapolitan | 4.2★ | Le Fooding, Gault & Millau, Do It In Paris |
+| Piennolo | 15th | Neapolitan | 4.8★ | Time Out, TheFork |
+| Il Forno Di Napoli | 14th | Neapolitan | 4.5★ | Tripadvisor Top 500 |
+| Papilla Soufflot | 5th | Neapolitan | 4.6★ | Tripadvisor, TheFork |
+| Pizza Viva | 5th | Neapolitan | 4.5★ | Sortir à Paris, Paris Bouge |
+
+**Total pizzerias: 51** (up from 43)
+**Left Bank coverage: 14 pizzerias** (up from 6)
+
+### Selection Criteria Used:
+- Primary: Editorial recognition (Le Fooding, Gault & Millau, Time Out, Michelin mentions)
+- Secondary: Google rating (not used as exclusion criterion)
+- Verified: All entries have documented editorial sources
+
 ### Admin Panel Testing Complete ✓
-- All CRUD operations verified working (100% pass rate)
-- Search by name and neighborhood working
-- Add/Edit/Delete pizzeria forms functional
-- Form validation, badges, and characteristics all working
-- Testing agent added `/admin` route fix and test files
+All CRUD operations verified working (100% pass rate)
 
-### Added 4 User-Requested Pizzerias:
-1. **Ceprano** - 5 Rue Constant Berthaut, 75020 Paris (Jourdain) - 4.4★
-2. **Brutti E Cattivi** - 6 Rue du Surmelin, 75020 Paris (Pelleport) - 4.7★
-3. **Fratellino** - 11 Rue Saint-Lazare, 75009 Paris (Saint-Lazare) - 4.9★
-4. **Libertino** (Big Mamma) - 44 Rue de Paradis, 75010 Paris (Gare du Nord) - 4.8★ (updated address)
-
-### Fixed Data Duplication Issue:
-- Made POST /api/pizzerias idempotent (checks for existing name before insert)
-- Added pizzerias to seed data for persistence across restarts
+### Bug Fixes
+- Fixed La Piazzetta and East Mamma burger image issue
 
 ## Data Notes
 - Wait times are **SIMULATED** based on time of day and popularity
