@@ -283,11 +283,15 @@ async def get_pizzerias(
     italian_pizzaiolo: Optional[bool] = None,
     good_wine: Optional[bool] = None,
     famous_tiramisu: Optional[bool] = None,
+    featured_by_critics: Optional[bool] = None,
     include_wait_time: Optional[bool] = True,
     user_lat: Optional[float] = None,
     user_lon: Optional[float] = None,
     sort_by: Optional[str] = None  # distance, rating, wait_time
 ):
+    # Editorial sources that count as "critics"
+    EDITORIAL_SOURCES = ["Le Fooding", "Gault & Millau", "Michelin", "Time Out", "New York Times", "Le Figaro"]
+    
     query = {}
     if style:
         query["pizza_style"] = style
@@ -305,6 +309,8 @@ async def get_pizzerias(
         query["filters.good_wine"] = good_wine
     if famous_tiramisu is not None:
         query["filters.famous_tiramisu"] = famous_tiramisu
+    if featured_by_critics:
+        query["recommended_by"] = {"$in": EDITORIAL_SOURCES}
     
     pizzerias = await db.pizzerias.find(query, {"_id": 0}).to_list(100)
     
